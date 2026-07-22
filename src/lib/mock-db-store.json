@@ -1,0 +1,644 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "slug": "cargo-pants-stretch-olive",
+      "name": "Stretch Cargo Pants - Olive Green",
+      "shortDescription": "6-pocket stretch cargo for daily adventures",
+      "description": "Engineered with 4-way stretch and reinforced stitching, these cargo pants are favorite among Ellenabad youth. Perfect for college, travel, and casual outings.",
+      "price": 1499,
+      "comparePrice": 2199,
+      "category": "Cargo Pants",
+      "categorySlug": "cargo-pants",
+      "brand": "Urban Edge",
+      "gender": "men",
+      "collectionType": [
+        "trending",
+        "casual"
+      ],
+      "fabric": "Cotton Twill Stretch",
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "colors": [
+        {
+          "name": "Olive",
+          "hex": "#606C38"
+        },
+        {
+          "name": "Khaki",
+          "hex": "#C3B091"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80",
+        "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&q=80"
+      ],
+      "rating": 4.7,
+      "reviewCount": 89,
+      "isFeatured": true,
+      "isTrending": true,
+      "stock": 32,
+      "categoryId": 1,
+      "brandId": 2,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 3,
+      "slug": "kids-party-frock-pink-princess",
+      "name": "Princess Party Frock - Blush Pink",
+      "shortDescription": "Designer party wear frock for little princesses",
+      "description": "Make her birthday magical with this premium layered frock featuring sequin work, soft lining, and comfortable fit. Most loved by Ellenabad families for wedding functions.",
+      "price": 1899,
+      "comparePrice": 2599,
+      "category": "Frocks",
+      "categorySlug": "frocks",
+      "brand": "Tiny Trends",
+      "gender": "kids",
+      "collectionType": [
+        "party",
+        "wedding",
+        "festival"
+      ],
+      "fabric": "Net & Satin with Cotton Lining",
+      "sizes": [
+        "2-3Y",
+        "3-4Y",
+        "5-6Y",
+        "7-8Y",
+        "9-10Y"
+      ],
+      "colors": [
+        {
+          "name": "Blush Pink",
+          "hex": "#FFB6C1"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "#87CEEB"
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/11100116/pexels-photo-11100116.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "https://images.unsplash.com/photo-1560506840-ec148e82a604?w=800&q=80"
+      ],
+      "rating": 4.9,
+      "reviewCount": 203,
+      "isFeatured": true,
+      "isBestseller": true,
+      "stock": 28,
+      "categoryId": 2,
+      "brandId": 3,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 4,
+      "slug": "boys-graphic-hoodie-astronaut",
+      "name": "Astronaut Graphic Hoodie - Midnight Black",
+      "shortDescription": "Cozy fleece hoodie with space graphic",
+      "description": "Winter favorite for Ellenabad school kids. Super soft fleece, kangaroo pockets, and vibrant astronaut print that sparks imagination.",
+      "price": 999,
+      "comparePrice": 1499,
+      "category": "Hoodies",
+      "categorySlug": "hoodies",
+      "brand": "Kidzo",
+      "gender": "kids",
+      "collectionType": [
+        "winter",
+        "school",
+        "trending"
+      ],
+      "fabric": "Fleece Cotton Blend",
+      "sizes": [
+        "4Y",
+        "6Y",
+        "8Y",
+        "10Y",
+        "12Y",
+        "14Y"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#0F172A"
+        },
+        {
+          "name": "Navy",
+          "hex": "#0B1D3A"
+        },
+        {
+          "name": "Grey",
+          "hex": "#94A3B8"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=800&q=80",
+        "https://images.pexels.com/photos/8612860/pexels-photo-8612860.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "rating": 4.6,
+      "reviewCount": 156,
+      "isTrending": true,
+      "isNewArrival": true,
+      "stock": 67,
+      "categoryId": 2,
+      "brandId": 6,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 5,
+      "slug": "mens-polo-tshirt-luxury-cotton",
+      "name": "Luxury Pique Polo T-Shirt - White",
+      "shortDescription": "Premium pique polo for refined casual look",
+      "description": "A must-have for every gentleman in Ellenabad. Luxury pique cotton, embroidered logo, and perfect collar that stays crisp.",
+      "price": 899,
+      "comparePrice": 1299,
+      "category": "Polo T-Shirts",
+      "categorySlug": "polo-t-shirts",
+      "brand": "Royal Club",
+      "gender": "men",
+      "collectionType": [
+        "summer",
+        "casual",
+        "bestseller"
+      ],
+      "fabric": "100% Pique Cotton",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        },
+        {
+          "name": "Navy",
+          "hex": "#0B1D3A"
+        },
+        {
+          "name": "Maroon",
+          "hex": "#800000"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&q=80",
+        "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=800&q=80"
+      ],
+      "rating": 4.8,
+      "reviewCount": 210,
+      "isBestseller": true,
+      "isFeatured": true,
+      "stock": 54,
+      "categoryId": 1,
+      "brandId": 4,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 6,
+      "slug": "women-kurti-set-embroidered-mustard",
+      "name": "Embroidered Kurti Set - Mustard Yellow",
+      "shortDescription": "Festive embroidered kurti with palazzo",
+      "description": "Celebrate festivities with this elegant embroidered kurti set. Rayon fabric, intricate thread work, loved by Ellenabad & Sirsa women for Diwali & weddings.",
+      "price": 1599,
+      "comparePrice": 2299,
+      "category": "Kurti Set",
+      "categorySlug": "kurti-set",
+      "brand": "Satrangi",
+      "gender": "women",
+      "collectionType": [
+        "festival",
+        "wedding",
+        "ethnic"
+      ],
+      "fabric": "Rayon with Embroidery",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Mustard",
+          "hex": "#D4A017"
+        },
+        {
+          "name": "Maroon",
+          "hex": "#800000"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=800&q=80",
+        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80"
+      ],
+      "rating": 4.7,
+      "reviewCount": 98,
+      "isFeatured": true,
+      "stock": 22,
+      "categoryId": 3,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 7,
+      "slug": "kids-school-uniform-shirt-grey",
+      "name": "School Uniform Shirt - Light Grey (Pack of 2)",
+      "shortDescription": "Durable school shirts for all-day comfort",
+      "description": "Trusted by 500+ families in Ellenabad. Premium cotton, fade-resistant, perfect for Ellenabad's school children.",
+      "price": 699,
+      "comparePrice": 899,
+      "category": "School Wear",
+      "categorySlug": "school-wear",
+      "brand": "Scholar",
+      "gender": "kids",
+      "collectionType": [
+        "school",
+        "bestseller"
+      ],
+      "fabric": "Cotton Blend",
+      "sizes": [
+        "3-4Y",
+        "5-6Y",
+        "7-8Y",
+        "9-10Y",
+        "11-12Y"
+      ],
+      "colors": [
+        {
+          "name": "Light Grey",
+          "hex": "#D3D3D3"
+        },
+        {
+          "name": "White",
+          "hex": "#FFFFFF"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=800&q=80"
+      ],
+      "rating": 4.9,
+      "reviewCount": 312,
+      "isBestseller": true,
+      "stock": 120,
+      "categoryId": 2,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 8,
+      "slug": "mens-denim-jeans-slim-dark-wash",
+      "name": "Slim Fit Denim Jeans - Dark Wash",
+      "shortDescription": "Power stretch slim fit jeans",
+      "description": "No.1 selling jeans in Ellenabad store. Dark wash, power stretch, perfect fade resistance. Worn by college students & young professionals.",
+      "price": 1799,
+      "comparePrice": 2499,
+      "category": "Jeans",
+      "categorySlug": "jeans",
+      "brand": "Denim Co",
+      "gender": "men",
+      "collectionType": [
+        "trending",
+        "bestseller",
+        "casual"
+      ],
+      "fabric": "Power Stretch Denim",
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "colors": [
+        {
+          "name": "Dark Blue",
+          "hex": "#1E3A8A"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&q=80",
+        "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&q=80"
+      ],
+      "rating": 4.8,
+      "reviewCount": 267,
+      "isBestseller": true,
+      "isTrending": true,
+      "stock": 78,
+      "categoryId": 1,
+      "brandId": 5,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 9,
+      "slug": "wedding-blazer-check-navy-gold",
+      "name": "Wedding Check Blazer - Navy & Gold",
+      "shortDescription": "Premium wedding blazer for the groom's squad",
+      "description": "Make a statement this wedding season. Premium suiting fabric, peak lapel, gold button details. Most requested wedding collection in Sirsa & Ellenabad.",
+      "price": 4999,
+      "comparePrice": 7999,
+      "category": "Blazers",
+      "categorySlug": "blazers",
+      "brand": "Gentleman's Manor",
+      "gender": "men",
+      "collectionType": [
+        "wedding",
+        "festival",
+        "premium"
+      ],
+      "fabric": "Premium Suiting with Check Weave",
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Navy Check",
+          "hex": "#0B1D3A"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
+      ],
+      "rating": 5,
+      "reviewCount": 43,
+      "isFeatured": true,
+      "stock": 15,
+      "categoryId": 1,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 10,
+      "slug": "winter-jacket-puffer-men-black",
+      "name": "Puffer Winter Jacket - Jet Black",
+      "shortDescription": "Ultra-warm puffer for North India winters",
+      "description": "Built for Ellenabad's chilly winters. Water-resistant, ultra-warm insulation, with premium zippers.",
+      "price": 2499,
+      "comparePrice": 3999,
+      "category": "Jackets",
+      "categorySlug": "jackets",
+      "brand": "North Frost",
+      "gender": "men",
+      "collectionType": [
+        "winter",
+        "trending"
+      ],
+      "fabric": "Polyester with Thermal Filling",
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "#000000"
+        },
+        {
+          "name": "Navy",
+          "hex": "#0B1D3A"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80",
+        "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
+      ],
+      "rating": 4.7,
+      "reviewCount": 112,
+      "isTrending": true,
+      "stock": 34,
+      "categoryId": 1,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.039Z"
+    },
+    {
+      "id": 11,
+      "slug": "girls-ethnic-lehenga-choli-pink",
+      "name": "Girls Ethnic Lehenga Choli - Baby Pink",
+      "shortDescription": "Festive lehenga choli for little divas",
+      "description": "Diwali & wedding favorite. Mirror work, soft lining, easy-to-wear design loved by Rania & Dabwali families too.",
+      "price": 1599,
+      "comparePrice": 2199,
+      "category": "Ethnic Wear",
+      "categorySlug": "ethnic-wear-kids",
+      "brand": "Riwayat Kids",
+      "gender": "kids",
+      "collectionType": [
+        "festival",
+        "wedding",
+        "ethnic"
+      ],
+      "fabric": "Georgette with Cotton Lining",
+      "sizes": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "colors": [
+        {
+          "name": "Baby Pink",
+          "hex": "#F8C8DC"
+        },
+        {
+          "name": "Mint",
+          "hex": "#98FB98"
+        }
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=800&q=80"
+      ],
+      "rating": 4.8,
+      "reviewCount": 87,
+      "isNewArrival": true,
+      "isFeatured": true,
+      "stock": 19,
+      "categoryId": 2,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.039Z"
+    },
+    {
+      "id": 12,
+      "slug": "mens-kurta-pajama-white-festival",
+      "name": "Festival Kurta Pajama - Pearl White Chikankari",
+      "shortDescription": "Lucknowi chikankari kurta for festivals",
+      "description": "Elegance meets tradition. White chikankari work kurta with pajama, perfect for Diwali, Eid, and family functions in Ellenabad.",
+      "price": 1999,
+      "comparePrice": 2799,
+      "category": "Kurta",
+      "categorySlug": "kurta-men",
+      "brand": "Nawabi",
+      "gender": "men",
+      "collectionType": [
+        "festival",
+        "ethnic",
+        "wedding"
+      ],
+      "fabric": "Cotton with Chikankari Embroidery",
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Pearl White",
+          "hex": "#F5F5F0"
+        },
+        {
+          "name": "Cream",
+          "hex": "#FFFDD0"
+        }
+      ],
+      "images": [
+        "https://images.pexels.com/photos/18194586/pexels-photo-18194586.jpeg?auto=compress&cs=tinysrgb&w=800"
+      ],
+      "rating": 4.9,
+      "reviewCount": 76,
+      "isFeatured": true,
+      "isNewArrival": true,
+      "stock": 26,
+      "categoryId": 1,
+      "brandId": 1,
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.039Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Men's Wear",
+      "slug": "men",
+      "description": "Shop the latest Men's Wear collection.",
+      "parentId": null,
+      "priority": 45,
+      "gender": "men",
+      "image": "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800&q=80",
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 2,
+      "name": "Kids Wear",
+      "slug": "kids",
+      "description": "Shop the latest Kids Wear collection.",
+      "parentId": null,
+      "priority": 35,
+      "gender": "kids",
+      "image": "https://images.pexels.com/photos/11100116/pexels-photo-11100116.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    },
+    {
+      "id": 3,
+      "name": "Women's Wear",
+      "slug": "women",
+      "description": "Shop the latest Women's Wear collection.",
+      "parentId": null,
+      "priority": 20,
+      "gender": "women",
+      "image": "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=800&q=80",
+      "isActive": true,
+      "createdAt": "2026-07-22T17:46:28.038Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "name": "hello8888",
+      "phone": "9999999",
+      "email": "",
+      "message": "njknnknknmknmkn",
+      "productInterest": "Kids Wear",
+      "source": "website_contact_form",
+      "id": 1,
+      "createdAt": "2026-07-22T17:53:53.677Z"
+    }
+  ],
+  "mediaItems": [
+    {
+      "id": 1,
+      "section": "about",
+      "key": "about-1",
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
+      "altText": "desktop about image",
+      "sortOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "section": "about",
+      "key": "about-2",
+      "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
+      "altText": "about black image",
+      "sortOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "section": "about",
+      "key": "about-3",
+      "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=800&q=80",
+      "altText": "about pink image",
+      "sortOrder": 3,
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "section": "banner",
+      "key": "banner-1",
+      "image": "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=1400&q=80",
+      "altText": "Men's collection banner",
+      "sortOrder": 1,
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "section": "banner",
+      "key": "banner-2",
+      "image": "https://images.pexels.com/photos/11100116/pexels-photo-11100116.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "altText": "Kids collection banner",
+      "sortOrder": 2,
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "section": "banner",
+      "key": "banner-3",
+      "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1400&q=80",
+      "altText": "Wedding season banner",
+      "sortOrder": 3,
+      "isActive": true
+    }
+  ]
+}
