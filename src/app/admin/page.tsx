@@ -9,7 +9,7 @@ import {
 import { WhatsappIcon } from "@/components/social-icons"
 
 export default function AdminDashboard() {
-  const [activeTab, setActiveTab] = useState<"dashboard" | "products" | "categories" | "contacts" | "media">("dashboard")
+  const [activeTab, setActiveTab] = useState<"dashboard" | "products" | "categories" | "contacts" | "media" | "profile">("dashboard")
   
   // Auth States
   const [authenticated, setAuthenticated] = useState<boolean | null>(null)
@@ -17,6 +17,14 @@ export default function AdminDashboard() {
   const [showPassword, setShowPassword] = useState(false)
   const [loginError, setLoginError] = useState("")
   const [loginLoading, setLoginLoading] = useState(false)
+
+  // Password Manager States
+  const [currPassword, setCurrPassword] = useState("")
+  const [newPassword, setNewPassword] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+  const [passError, setPassError] = useState("")
+  const [passSuccess, setPassSuccess] = useState("")
+  const [passLoading, setPassLoading] = useState(false)
 
   // Data States
   const [products, setProducts] = useState<any[]>([])
@@ -160,6 +168,54 @@ export default function AdminDashboard() {
       }
     } catch {
       showToast("Failed to logout.", "error")
+    }
+  }
+
+  const handleUpdatePassword = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setPassError("")
+    setPassSuccess("")
+
+    if (!currPassword || !newPassword || !confirmPassword) {
+      setPassError("All fields are required.")
+      return
+    }
+
+    if (newPassword !== confirmPassword) {
+      setPassError("New password and confirm password do not match.")
+      return
+    }
+
+    if (newPassword.length < 4) {
+      setPassError("Password must be at least 4 characters long.")
+      return
+    }
+
+    setPassLoading(true)
+    try {
+      const res = await fetch("/api/admin/update-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          currentPassword: currPassword,
+          newPassword: newPassword
+        })
+      })
+
+      const data = await res.json()
+      if (res.ok) {
+        setPassSuccess("Password changed successfully in environment configuration!")
+        setCurrPassword("")
+        setNewPassword("")
+        setConfirmPassword("")
+        showToast("Password updated successfully.")
+      } else {
+        setPassError(data.error || "Failed to update password.")
+      }
+    } catch {
+      setPassError("Network error. Please try again.")
+    } finally {
+      setPassLoading(false)
     }
   }
 
@@ -522,6 +578,7 @@ export default function AdminDashboard() {
               { id: "categories", label: "Categories", Icon: Folder },
               { id: "contacts", label: "Contacts (Leads)", Icon: Mail },
               { id: "media", label: "Media Manager", Icon: ImageIcon },
+              { id: "profile", label: "Profile & Security", Icon: User },
             ].map(item => {
               const IconComp = item.Icon
               const isActive = activeTab === item.id
