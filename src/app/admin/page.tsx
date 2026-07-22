@@ -1306,6 +1306,92 @@ export default function AdminDashboard() {
                   </div>
                 </div>
               )}
+
+              {/* --- 6. PROFILE / SECURITY VIEW --- */}
+              {activeTab === "profile" && (
+                <div className="max-w-xl mx-auto space-y-6">
+                  {/* Profile info card */}
+                  <div className="bg-white rounded-[28px] border border-slate-100 shadow-soft p-8 text-center relative overflow-hidden">
+                    <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#0B1D3A] via-[#C8A951] to-[#0B1D3A]" />
+                    <div className="w-20 h-20 mx-auto rounded-full bg-slate-100 flex items-center justify-center border text-[#0B1D3A] font-bold text-2xl uppercase mt-4">
+                      AK
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0B1D3A] mt-4">Ajay Kumar</h3>
+                    <p className="text-xs font-bold text-[#C8A951] uppercase tracking-wide">Store Director & Admin</p>
+                    <p className="text-slate-500 text-xs mt-2">Manage settings, variables, and security parameters of Ajay Readymade Store family fashion web portal.</p>
+                  </div>
+
+                  {/* Password Manager Form */}
+                  <div className="bg-white rounded-[28px] border border-slate-100 shadow-soft p-8">
+                    <div className="flex items-center gap-3 border-b pb-4 mb-6">
+                      <div className="w-10 h-10 rounded-xl bg-amber-50 text-[#C8A951] flex items-center justify-center border border-amber-100">
+                        <Lock className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-[#0B1D3A] text-[16px]">Admin Password Manager</h4>
+                        <p className="text-xs text-slate-500">Change password credentials stored in the backend config</p>
+                      </div>
+                    </div>
+
+                    <form onSubmit={handleUpdatePassword} className="space-y-4 text-sm">
+                      {passError && (
+                        <div className="p-3.5 text-xs text-red-700 bg-red-50 border border-red-100 rounded-2xl animate-pulse">
+                          {passError}
+                        </div>
+                      )}
+                      {passSuccess && (
+                        <div className="p-3.5 text-xs text-green-700 bg-green-50 border border-green-100 rounded-2xl">
+                          {passSuccess}
+                        </div>
+                      )}
+
+                      <div className="space-y-1.5">
+                        <label className="block text-xs font-bold text-slate-400 uppercase">Current Access Password</label>
+                        <input 
+                          type="password"
+                          required
+                          value={currPassword}
+                          onChange={(e) => setCurrPassword(e.target.value)}
+                          placeholder="••••••••"
+                          className="w-full h-11 border rounded-xl px-4 outline-none text-[#0B1D3A] focus:border-[#0B1D3A] focus:ring-1 focus:ring-[#0B1D3A] transition"
+                        />
+                      </div>
+
+                      <div className="space-y-1.5">
+                        <label className="block text-xs font-bold text-slate-400 uppercase">New Password</label>
+                        <input 
+                          type="password"
+                          required
+                          value={newPassword}
+                          onChange={(e) => setNewPassword(e.target.value)}
+                          placeholder="Minimum 4 characters"
+                          className="w-full h-11 border rounded-xl px-4 outline-none text-[#0B1D3A] focus:border-[#0B1D3A] focus:ring-1 focus:ring-[#0B1D3A] transition"
+                        />
+                      </div>
+
+                      <div className="space-y-1.5">
+                        <label className="block text-xs font-bold text-slate-400 uppercase">Confirm New Password</label>
+                        <input 
+                          type="password"
+                          required
+                          value={confirmPassword}
+                          onChange={(e) => setConfirmPassword(e.target.value)}
+                          placeholder="Confirm new password"
+                          className="w-full h-11 border rounded-xl px-4 outline-none text-[#0B1D3A] focus:border-[#0B1D3A] focus:ring-1 focus:ring-[#0B1D3A] transition"
+                        />
+                      </div>
+
+                      <button 
+                        type="submit"
+                        disabled={passLoading}
+                        className="w-full h-12 rounded-full bg-[#0B1D3A] text-white font-semibold flex items-center justify-center gap-2 hover:bg-[#122954] transition shadow-soft disabled:opacity-75 cursor-pointer mt-6"
+                      >
+                        {passLoading ? "Updating Config..." : "Change Password"}
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              )}
             </>
           )}
         </div>
