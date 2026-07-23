@@ -1,57 +1,91 @@
-# Ajay Readymade Store - Family Fashion Web Portal
+<div align="center">
 
-A high-performance, modern, and SEO-optimized family fashion web catalog built for **Ajay Readymade Store**, Ellenabad's premium clothing store specializing in Men's Wear, Kids Wear, and Women's Wear.
+# 🛍️ Ajay Readymade Store — Family Fashion Web Portal
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.x-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.x-blue?style=flat-square&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.x-38bdf8?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-0.45.2-C5F14E?style=flat-square&logo=drizzle)](https://orm.drizzle.team/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16.x-336791?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
+A high-performance, modern, and localized SEO-optimized digital catalog and lead-generation portal built for **Ajay Readymade Store**, Ellenabad's flagship destination for Men's Wear, Women's Wear, and Kids' Wear.
+
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.1.17-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-0.45.2-C5F14E?style=for-the-badge&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+[Explore Web Portal](#-overview) • [Key Features](#-key-features) • [Tech Stack](#-tech-stack) • [Database Architecture](#-database-architecture) • [Getting Started](#-getting-started)
+
+</div>
 
 ---
 
 ## 📖 Table of Contents
-1. [Overview](#-overview)
-2. [Tech Stack](#-tech-stack)
-3. [Key Features](#-key-features)
-4. [Project Structure](#-project-structure)
-5. [Database Architecture](#-database-architecture)
-6. [Local SEO Strategy](#-local-seo-strategy)
-7. [Getting Started](#-getting-started)
-8. [Available Scripts](#-available-scripts)
+
+- [Overview](#-overview)
+- [Tech Stack](#-tech-stack)
+- [Key Features](#-key-features)
+- [Local SEO Strategy](#-local-seo-strategy)
+- [Project Structure](#-project-structure)
+- [Database Architecture](#-database-architecture)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#1-prerequisites)
+  - [Environment Setup](#2-environment-setup)
+  - [Installation](#3-installation)
+  - [Database Migration](#4-database-migration)
+  - [Development Server](#5-development-server)
+- [Available Scripts](#-available-scripts)
+- [Contact & Store Location](#-contact--store-location)
 
 ---
 
 ## 🔍 Overview
 
-**Ajay Readymade Store** is a localized family fashion destination based on Gurudwara Road, Near Singla Hospital, Ellenabad, Haryana. The portal functions as a high-fidelity digital catalog and inquiry system focusing on:
-*   **Men's Wear (45% Focus):** Formal and casual shirts, t-shirts, polo shirts, jeans, cargo pants, trousers, jackets, blazers, and festive/wedding kurtas.
-*   **Kids Wear (35% Focus):** Baby wear, school uniforms, frocks, dresses, party wear, winter hoodies, and ethnic wear.
-*   **Women's Wear (20% Focus):** Kurtis, kurti sets, palazzos, leggings, tops, and ethnic festive wear.
+**Ajay Readymade Store** is a premier family fashion hub located on Gurudwara Road, Ellenabad (Haryana). This web portal acts as a high-fidelity catalog, local search magnet, and B2C inquiry system engineered to convert digital interest into footfall and direct sales.
+
+### Catalog Highlights:
+* 👔 **Men's Wear:** Formals, Casual Shirts, T-Shirts, Polos, Denim, Cargo Trousers, Blazers, and Festive Wedding Kurtas.
+* 👗 **Women's Wear:** Designer Kurtis, Kurti Sets, Palazzos, Leggings, Ethnic Wear, and Western Tops.
+* 🧒 **Kids' Wear:** Baby Collections, Party Dresses, Ethnic Wear, Winter Hoodies, and School Uniforms.
+* 🏷️ **Brand Showcase:** Highlighting top partners like *Louis Monarch*, *Urban Edge*, and more.
 
 ---
 
 ## 🛠 Tech Stack
 
-*   **Framework:** Next.js (App Router, Server Components)
-*   **Library:** React 19 (Beta/RC versions integrated)
-*   **Styling:** Tailwind CSS v4.0.0 (using PostCSS config)
-*   **Database ORM:** Drizzle ORM paired with Drizzle Kit for migrations
-*   **Database Driver:** `node-postgres` (`pg` pool setup)
-*   **Animations:** Framer Motion for smooth client-side transitions
-*   **Icons:** Lucide React for UI iconography
-*   **Validation & Utilities:** `clsx` and `tailwind-merge` for conditional class combinations
+| Layer | Technology | Description |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 16 (App Router) | React Server Components, dynamic file routes, metadata generation |
+| **Frontend Library** | React 19 | Modern UI rendering engine |
+| **Styling** | Tailwind CSS v4 | PostCSS engine, modern utility styles, custom design system |
+| **ORM** | Drizzle ORM (v0.45.2) | Type-safe PostgreSQL ORM with Drizzle Kit migrations |
+| **Database Driver** | `node-postgres` (`pg`) | High-performance connection pool management |
+| **Animations** | Framer Motion | Smooth carousel slides, page transitions, interactive UI elements |
+| **Icons** | Lucide React | Clean, responsive vector icons |
+| **Utilities** | `clsx` + `tailwind-merge` | Conditional and merged dynamic class combinations |
 
 ---
 
 ## ✨ Key Features
 
-1.  **Dynamic SEO & Localized Landing Pages:** Direct location targeting through dynamic route templates (`src/app/[city]/page.tsx`) mapping Sirsa, Rania, Dabwali, Hanumangarh, and Ellenabad.
-2.  **Structured JSON-LD Schema:** Includes `ClothingStore`, `WebSite`, and `BreadcrumbList` schemas injected into page layouts for Google Rich Snippets optimization.
-3.  **B2C Inquiry / Lead Pipeline:** Features form submissions saving inquiries directly to the database with a reference to products of interest.
-4.  **Responsive Product Catalog:** Fully adaptive grid displays featuring custom components (`ProductCard`, `CategoryGrid`, `HeroSlider`, `BestsellerTabs`).
-5.  **WhatsApp Integration:** Floating click-to-chat action widget and location-specific message pre-fills.
+- 🌐 **Localized Multi-City SEO Pages:** Dynamic dynamic route templates (`/src/app/[city]/page.tsx`) specifically targeting regional search traffic in **Ellenabad**, **Sirsa**, **Rania**, **Dabwali**, and **Hanumangarh**.
+- 🏷️ **Rich Structured Data (JSON-LD):** Built-in Google Rich Snippets integration including `ClothingStore`, `WebSite`, and `BreadcrumbList` schemas.
+- 💬 **Direct WhatsApp Inquiry Pipeline:** Floating multi-channel action buttons with pre-configured messages for instant customer support and lead closing.
+- 📥 **B2C Customer Lead Capture:** Built-in inquiry form saving product-level leads directly into the PostgreSQL database.
+- 📱 **Fully Responsive Modern Catalog:** Adaptive grids, category carousels, bestseller tabs, and brand showcases optimized for mobile, tablet, and desktop screens.
+- 🗺️ **Interactive Store Finder:** Embedded Google Map navigation directing shoppers straight to the flagship store on Gurudwara Road.
+- 📑 **Dynamic Sitemap & Robots Generator:** Automated `sitemap.ts` and `robots.ts` ensuring immediate indexing by search engine crawlers.
+
+---
+
+## 📈 Local SEO Strategy
+
+To dominate local search results within a 60km radius of the flagship store, the application leverages dynamic regional routing (`/[city]`) backed by location-specific datasets (`src/lib/data.ts`):
+
+* 📍 **Ellenabad** — Flagship Store Location (Gurudwara Road, Near Singla Hospital)
+* 📍 **Sirsa** — Regional Hub (25 km radius)
+* 📍 **Rania** — Nearby Market (12 km radius)
+* 📍 **Dabwali** — Extended Coverage (35 km radius)
+* 📍 **Hanumangarh** — Inter-state Connectivity (60 km radius)
+
+Each localized route auto-configures targeted metadata, open-graph tags, location badges, travel distances, and localized canonical links.
 
 ---
 
@@ -59,116 +93,128 @@ A high-performance, modern, and SEO-optimized family fashion web catalog built f
 
 ```text
 ajay-readymade-website-development/
-├── drizzle.config.json       # Drizzle database migration setup
-├── next.config.ts            # Next.js configuration
-├── package.json              # Dependencies and scripts config
-├── tsconfig.json             # TypeScript settings
+├── drizzle.config.json       # Drizzle Kit migration & schema configuration
+├── next.config.ts            # Next.js framework configuration
+├── package.json              # Dependencies and NPM scripts
+├── tsconfig.json             # TypeScript compiler settings
 ├── src/
-│   ├── app/                  # Next.js App Router folders
-│   │   ├── [city]/           # Dynamic SEO-optimized city routes
-│   │   ├── about/            # About Us section
-│   │   ├── api/              # API Route Handlers (enquiry, products, health)
+│   ├── app/                  # Next.js App Router Structure
+│   │   ├── [city]/           # Dynamic regional SEO landing pages
+│   │   ├── about/            # About Us page
+│   │   ├── admin/            # Admin control section
+│   │   ├── api/              # API route handlers (inquiry, products, health)
 │   │   ├── blogs/            # Articles and fashion guides
-│   │   ├── category/         # Catalog categorized views
-│   │   ├── collections/      # Curated themes (e.g. Wedding Edit)
-│   │   ├── contact/          # Physical address and inquiry form
-│   │   ├── gallery/          # Store and catalog media view
-│   │   ├── globals.css       # Custom styling overrides
-│   │   ├── layout.tsx        # Global Layout, fonts, and Schema wrappers
-│   │   └── page.tsx          # Homepage view (sliders, strips, map)
-│   ├── components/           # Reusable UI Blocks
-│   │   ├── hero-slider.tsx   # Framer Motion carousel
-│   │   ├── product-card.tsx  # Product listing grid item
-│   │   ├── sections.tsx      # Landing page content modules
-│   │   ├── site-header.tsx   # Responsive main navigation
-│   │   ├── site-footer.tsx   # Informational footer with business details
-│   │   └── store-map.tsx     # Embedded map section pointing to Gurudwara Road
-│   ├── db/                   # Database files
-│   │   ├── index.ts          # Postgres pool and Drizzle initialization
-│   │   └── schema.ts         # Relational database schemas
-│   └── lib/                  # Utilities & Static/Mock Data
-│       ├── data.ts           # Product, testimonials, and brand seed datasets
-│       └── utils.ts          # Classname merger helper
+│   │   ├── brands/           # Partner brands catalog
+│   │   ├── category/         # Categorized collection views
+│   │   ├── collections/      # Curated themes (e.g., Festive Edit)
+│   │   ├── contact/          # Store location & inquiry page
+│   │   ├── gallery/          # Store media gallery
+│   │   ├── kids/             # Dedicated Kids' Wear catalog
+│   │   ├── men/              # Dedicated Men's Wear catalog
+│   │   ├── new-arrivals/     # New seasonal collections
+│   │   ├── offers/           # Special discounts and promotional banners
+│   │   ├── product/          # Product detail views
+│   │   ├── trending/         # Trending styles section
+│   │   ├── women/            # Dedicated Women's Wear catalog
+│   │   ├── globals.css       # Tailwind CSS imports & global styles
+│   │   ├── layout.tsx        # Base root layout, typography & JSON-LD schema
+│   │   ├── page.tsx          # Main homepage view
+│   │   ├── robots.ts         # Automated search engine robots directives
+│   │   └── sitemap.ts        # Automated SEO XML sitemap generator
+│   ├── components/           # Modular UI Components
+│   │   ├── category-grid.tsx # Visual category tiles
+│   │   ├── contact-form.tsx  # Customer inquiry submission form
+│   │   ├── hero-slider.tsx   # Framer Motion banner slider
+│   │   ├── product-card.tsx  # Product listing card component
+│   │   ├── sections.tsx      # Landing page feature sections
+│   │   ├── site-footer.tsx   # Comprehensive footer with map link & contact
+│   │   ├── site-header.tsx   # Responsive sticky navbar
+│   │   └── store-map.tsx     # Embedded Google Map container
+│   ├── db/                   # Database Layer
+│   │   ├── index.ts          # Postgres pool setup and Drizzle ORM client
+│   │   └── schema.ts         # Drizzle schema models (products, leads, etc.)
+│   └── lib/                  # Utilities & Static Data
+│       ├── data.ts           # Product catalog, cities, & store metadata
+│       └── utils.ts          # Utility functions (`clsx` + `tailwind-merge`)
 ```
 
 ---
 
 ## 🗄 Database Architecture
 
-The relational database layer utilizes PostgreSQL, structured via Drizzle ORM.
+Database operations are powered by **PostgreSQL** and managed using **Drizzle ORM** (`src/db/schema.ts`).
 
-### Database Tables (`src/db/schema.ts`):
-1.  **`categories`**: Tracks hierarchical navigation, target gender (`men`, `women`, `kids`, `unisex`), and priority ordering.
-2.  **`brands`**: Lists brand profiles (`Louis Monarch`, `Urban Edge`, etc.) and a flag for featured partners.
-3.  **`products`**: Central product records storing price details, stock, rating data, size arrays, color options, fabric details, and collection categorization flags (featured, bestseller, trending, new arrivals).
-4.  **`reviews`**: Contains verified buyer reviews linked to specific products.
-5.  **`blogs`**: Houses content-rich blogs for driving inbound search traffic.
-6.  **`inquiries`**: Lead tracking for tracking contact inquiries, phone numbers, and products of interest.
-7.  **`subscribers`**: Newsletter subscription emails.
-8.  **`hero_banners`**: Homepage promotional carousel slides.
-
----
-
-## 📈 Local SEO Strategy
-
-To target consumers within the Sirsa-Ellenabad district radius, the application dynamically generates localized templates based on metadata configured in `src/lib/data.ts`:
-
-*   **Ellenabad** (Main Flagship Store - Gurudwara Road)
-*   **Sirsa** (25 km radius)
-*   **Rania** (12 km radius)
-*   **Dabwali** (35 km radius)
-*   **Hanumangarh** (60 km radius)
-
-Every city landing page automatically registers tailored metadata, unique keywords, distance indicators, and canonical links to boost search placement.
+### Schema Model Overview:
+1. **`categories`** — Navigation hierarchy, target genders (`men`, `women`, `kids`, `unisex`), and priority ordering.
+2. **`brands`** — Featured partner brands and catalog associations.
+3. **`products`** — Core catalog containing pricing, size options, stock levels, fabric details, colors, and promotional flags (*featured, bestseller, trending, new arrivals*).
+4. **`reviews`** — Buyer reviews and ratings mapped to products.
+5. **`blogs`** — SEO fashion articles driving inbound search traffic.
+6. **`inquiries`** — Lead capture storing customer name, phone number, message, and target product reference.
+7. **`subscribers`** — Newsletter subscription list.
+8. **`hero_banners`** — Promotional homepage sliders and active hero banners.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
-Ensure you have Node.js (v18.x or later) and PostgreSQL installed on your system.
+Follow these steps to set up the project locally.
 
-### 2. Configure Environment Variables
-Create a `.env` file (or `.env.local`) at the root of the project:
+### 1. Prerequisites
+- **Node.js**: `v18.x` or later (Recommended: `v20.x+`)
+- **PostgreSQL**: `v16.x` database instance
+- **npm**: `v9.x+` package manager
+
+### 2. Environment Setup
+Create a `.env` file in the root directory:
+
 ```env
-DATABASE_URL="postgresql://postgres:postgres@127.0.0.1:5432/app_db"
+DATABASE_URL="postgresql://postgres:password@localhost:5432/ajay_store_db"
 ```
 
-### 3. Install Dependencies
-Run the installation command in your terminal:
+### 3. Installation
+Install project dependencies:
+
 ```bash
 npm install
 ```
 
-### 4. Database Setup & Migrations
-Sync your schemas and run migrations using Drizzle Kit:
+### 4. Database Migration
+Generate and apply database migrations using Drizzle Kit:
+
 ```bash
-# Generate database schema migrations
+# Generate SQL migration scripts from schema
 npx drizzle-kit generate
 
-# Push migrations directly to your database instance
+# Push database schema directly to PostgreSQL
 npx drizzle-kit push
 ```
 
-### 5. Running the Application
-Launch the local development server:
+### 5. Development Server
+Start the Next.js development server:
+
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the application.
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ---
 
 ## 📜 Available Scripts
 
-In the project directory, you can run the following commands:
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Launches local development server with hot-reload |
+| `npm run build` | Builds optimized production bundle |
+| `npm run start` | Starts Next.js production server |
+| `npm run lint` | Runs ESLint check across the codebase |
+| `npm run typecheck` | Validates TypeScript types (`tsc --noEmit`) |
 
-*   `npm run dev`: Runs the app in development mode.
-*   `npm run build`: Compiles the application for production deployment.
-*   `npm run start`: Starts the Next.js server with the production build.
-*   `npm run lint`: Analyzes project codebase using ESLint.
-*   `npm run typecheck`: Validates TypeScript structures without building output.
-#   a j a y - r e a d y m a d e - w e b s i t e  
- #   a j a y - r e a d y m a d e - w e b s i t e  
- #   p r o j e c t  
- 
+---
+
+## 📍 Contact & Store Location
+
+* 🏢 **Store Name:** Ajay Readymade Store
+* 📍 **Address:** Gurudwara Road, Near Singla Hospital, Ellenabad, Haryana 125102
+* 🛍️ **Specialization:** Family Fashion — Men's, Women's & Kids' Wear

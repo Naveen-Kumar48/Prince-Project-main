@@ -22,11 +22,29 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [searchOpen, setSearchOpen] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener("scroll", onScroll)
     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+
+  useEffect(() => {
+    const checkAdmin = async () => {
+      try {
+        const res = await fetch("/api/admin/check")
+        const data = await res.json()
+        if (data.authenticated) {
+          setIsAdmin(true)
+        } else {
+          setIsAdmin(false)
+        }
+      } catch {
+        setIsAdmin(false)
+      }
+    }
+    checkAdmin()
   }, [])
 
   return (
@@ -87,6 +105,13 @@ export function SiteHeader() {
                 </div>
               </div>
 
+              {isAdmin && (
+                <Link href="/admin" className="flex items-center gap-1.5 h-10 px-4 rounded-full bg-[#0B1D3A] text-[#C8A951] border border-[#C8A951]/20 text-[13.5px] font-bold hover:bg-[#122954] transition shadow-soft">
+                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span>Admin Panel</span>
+                </Link>
+              )}
+
               <a href={`https://wa.me/${store.whatsapp}?text=Hi%20Ajay%20Readymade%20Store%2C%20I%20want%20to%20enquire%20about%20products`} target="_blank" className="hidden sm:flex items-center gap-2 h-10 px-4 rounded-full bg-[#25D366] text-white text-[13px] font-semibold hover:opacity-90 transition">
                 <WhatsappIcon className="w-4 h-4" /> Enquire
               </a>
@@ -118,6 +143,12 @@ export function SiteHeader() {
                   <Link href="/about" onClick={()=>setMobileOpen(false)} className="px-4 py-3 rounded-2xl bg-[#F8F9FB] text-sm font-medium">About</Link>
                   <Link href="/blogs" onClick={()=>setMobileOpen(false)} className="px-4 py-3 rounded-2xl bg-[#F8F9FB] text-sm font-medium">Blogs</Link>
                   <Link href="/contact" onClick={()=>setMobileOpen(false)} className="px-4 py-3 rounded-2xl bg-[#F8F9FB] text-sm font-medium">Contact</Link>
+                  {isAdmin && (
+                    <Link href="/admin" onClick={()=>setMobileOpen(false)} className="col-span-2 px-4 py-3 rounded-2xl bg-[#0B1D3A] text-[#C8A951] border border-[#C8A951]/20 text-sm font-bold text-center flex items-center justify-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                      <span>Admin Workspace</span>
+                    </Link>
+                  )}
                 </div>
               </div>
               <div className="mt-4 p-4 rounded-2xl bg-[#FBF6E9] border border-[#E9D09A]/30">

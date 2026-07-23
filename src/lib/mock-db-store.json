@@ -49,7 +49,7 @@
       "stock": 32,
       "categoryId": 1,
       "brandId": 2,
-      "isActive": true,
+      "isActive": false,
       "createdAt": "2026-07-22T17:46:28.038Z"
     },
     {
@@ -573,18 +573,7 @@
       "createdAt": "2026-07-22T17:46:28.038Z"
     }
   ],
-  "inquiries": [
-    {
-      "name": "hello8888",
-      "phone": "9999999",
-      "email": "",
-      "message": "njknnknknmknmkn",
-      "productInterest": "Kids Wear",
-      "source": "website_contact_form",
-      "id": 1,
-      "createdAt": "2026-07-22T17:53:53.677Z"
-    }
-  ],
+  "inquiries": [],
   "mediaItems": [
     {
       "id": 1,
