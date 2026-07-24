@@ -138,6 +138,53 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     ]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the best clothing and readymade store in Ellenabad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store on Gurudwara Road, Near Singla Hospital, Ellenabad (Haryana 125102) is the top-rated family clothing store offering premium Men's Wear (45%), Kids Wear (35%), and Women's Wear (20%) at affordable prices since 1998."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Where is Ajay Readymade Store located?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store is located at Gurudwara Road, Near Singla Hospital, Ellenabad, Sirsa District, Haryana 125102. It serves customers from Ellenabad, Sirsa, Rania, Dabwali, and Hanumangarh."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Does Ajay Readymade Store offer clothing alteration and exchange?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, Ajay Readymade Store provides free same-day fitting alterations and hassle-free 7-day product exchanges for all clothing purchases."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What categories of clothes are available at Ajay Readymade Store?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store specializes in Men's formal shirts, casual shirts, jeans, trousers, suit blazers, Kurta Pajamas, Kids school uniforms, party dresses, frocks, baby wear, and Women's Kurtis, Palazzo sets, and ethnic festive wear."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What are the opening hours of Ajay Readymade Store Ellenabad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store is open Monday through Sunday from 10:00 AM to 9:00 PM, with extended hours during festival seasons."
+        }
+      }
+    ]
+  };
+
   return (
     <html lang="en-IN" className={`${poppins.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
@@ -155,9 +202,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/logo.png" type="image/png" />
         <meta name="google-site-verification" content="AatxextV6LTcGVvKh0oSyMMfPsbXFEu-TcBBqYZZhn0" />
+        <meta name="geo.region" content="IN-HR" />
+        <meta name="geo.placename" content="Ellenabad, Sirsa, Haryana" />
+        <meta name="geo.position" content="29.451;74.657" />
+        <meta name="ICBM" content="29.451, 74.657" />
         <meta name="theme-color" content="#0A1931" />
       </head>
       <body className="antialiased bg-[#FCFCFD] text-slate-900 overflow-x-hidden" suppressHydrationWarning>
