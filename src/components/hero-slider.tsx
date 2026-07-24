@@ -62,14 +62,14 @@ export function HeroSlider() {
           {/* Content */}
           <div className="relative z-10 h-full flex items-center">
             <div className="px-6 sm:px-10 lg:px-16 w-full max-w-[760px]">
-              <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-[12px] font-medium mb-5">
-                <span className="w-2 h-2 rounded-full bg-[#C8A951] animate-pulse" /> {slide.badge}
-                <span className="px-2 py-0.5 rounded-full bg-[#C8A951] text-[#070F23] text-[10px] font-bold ml-1">{slide.accent}</span>
+              <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-[12px] font-medium mb-5">
+                <span className="w-2 h-2 rounded-full bg-[#FFC800] animate-pulse" /> {slide.badge}
+                <span className="px-2.5 py-0.5 rounded-full bg-[#FFC800] text-[#0A1931] text-[10px] font-extrabold ml-1">{slide.accent}</span>
               </motion.div>
 
               <motion.h1 initial={{ y: 30, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }} className="text-[44px] sm:text-[56px] lg:text-[68px] font-bold leading-[0.9] tracking-[-0.04em] text-white">
                 {slide.title.split(" ").slice(0,-1).join(" ")} <br/>
-                <span className="text-[#E9D09A]">{slide.title.split(" ").slice(-1)}</span>
+                <span className="text-[#FFC800]">{slide.title.split(" ").slice(-1)}</span>
               </motion.h1>
 
               <motion.p initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="mt-5 text-[18px] sm:text-[20px] leading-relaxed text-white/80 max-w-[520px]">
@@ -77,11 +77,11 @@ export function HeroSlider() {
               </motion.p>
 
               <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }} className="mt-8 flex flex-wrap gap-3">
-                <Link href={slide.link} className="h-[48px] px-8 rounded-full bg-white text-[#0B1D3A] font-semibold text-[15px] inline-flex items-center justify-center gap-2 hover:bg-[#FBF6E9] transition shadow-gold">
+                <Link href={slide.link} className="h-[48px] px-8 rounded-full bg-[#FFC800] text-[#0A1931] font-bold text-[15px] inline-flex items-center justify-center gap-2 hover:bg-[#FFD438] transition shadow-gold">
                   {slide.cta} <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link href="/contact" className="h-[48px] px-6 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white font-medium text-[15px] inline-flex items-center gap-2 hover:bg-white/15 transition">
-                  <MapPin className="w-4 h-4" /> Visit Store in Ellenabad
+                  <MapPin className="w-4 h-4 text-[#FFC800]" /> Visit Store in Ellenabad
                 </Link>
               </motion.div>
 
@@ -90,10 +90,10 @@ export function HeroSlider() {
                   {[1,2,3].map(i=>(
                     <img key={i} src={`https://i.pravatar.cc/100?img=${i+10}`} alt="" className="w-9 h-9 rounded-full border-2 border-white/20" />
                   ))}
-                  <div className="w-9 h-9 rounded-full bg-[#C8A951] border-2 border-white/20 flex items-center justify-center text-[11px] font-bold text-[#070F23]">5k+</div>
+                  <div className="w-9 h-9 rounded-full bg-[#FFC800] border-2 border-white/20 flex items-center justify-center text-[11px] font-bold text-[#0A1931]">5k+</div>
                 </div>
                 <div className="text-white/70 text-sm">
-                  <div className="flex items-center gap-1 text-[#C8A951]"><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><span className="text-white font-semibold ml-1">4.9/5</span></div>
+                  <div className="flex items-center gap-1 text-[#FFC800]"><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><Star className="w-4 h-4 fill-current" /><span className="text-white font-semibold ml-1">4.9/5</span></div>
                   <p className="text-xs text-white/50 mt-0.5">Trusted by families in Ellenabad & Sirsa</p>
                 </div>
               </motion.div>
@@ -102,16 +102,16 @@ export function HeroSlider() {
 
           {/* Controls */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 lg:left-auto lg:right-10 lg:translate-x-0 z-20 flex items-center gap-3">
-            <div className="flex items-center gap-2 px-2 h-11 rounded-full bg-[#070F23]/50 backdrop-blur border border-white/10">
-              <button onClick={()=>setIndex(i=> (i-1+slides.length)%slides.length)} className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white text-white hover:text-[#070F23] transition"><ChevronLeft className="w-4 h-4" /></button>
+            <div className="flex items-center gap-2 px-2 h-11 rounded-full bg-[#0A1931]/60 backdrop-blur border border-white/10">
+              <button onClick={()=>setIndex(i=> (i-1+slides.length)%slides.length)} className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white text-white hover:text-[#0A1931] transition"><ChevronLeft className="w-4 h-4" /></button>
               <div className="flex gap-1.5 px-1">
                 {slides.map((_, i)=>(
-                  <button key={i} onClick={()=>setIndex(i)} className={`h-1.5 rounded-full transition-all ${i===index ? "w-8 bg-white" : "w-4 bg-white/30 hover:bg-white/60"}`} />
+                  <button key={i} onClick={()=>setIndex(i)} className={`h-1.5 rounded-full transition-all ${i===index ? "w-8 bg-[#FFC800]" : "w-4 bg-white/30 hover:bg-white/60"}`} />
                 ))}
               </div>
-              <button onClick={()=>setIndex(i=> (i+1)%slides.length)} className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-[#FBF6E9] text-[#070F23] transition"><ChevronRight className="w-4 h-4" /></button>
+              <button onClick={()=>setIndex(i=> (i+1)%slides.length)} className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-[#FFF9E6] text-[#0A1931] transition"><ChevronRight className="w-4 h-4" /></button>
             </div>
-            <div className="hidden lg:flex h-11 px-4 rounded-full bg-[#C8A951] text-[#070F23] text-xs font-bold items-center gap-2">45% Men • 35% Kids • 20% Women • Prioritized for You</div>
+            <div className="hidden lg:flex h-11 px-4 rounded-full bg-[#FFC800] text-[#0A1931] text-xs font-bold items-center gap-2">45% Men • 35% Kids • 20% Women • Prioritized for You</div>
           </div>
 
           {/* Side stats */}

@@ -61,13 +61,13 @@ export function BestsellerTabs() {
         <div className="flex flex-wrap gap-3 mb-8">
           <span className="px-4 py-2 rounded-full bg-[#0B1D3A] text-white text-sm font-semibold inline-flex items-center gap-1.5"><Star className="w-4 h-4 fill-current" /> Bestsellers in Ellenabad</span>
           <span className="px-4 py-2 rounded-full bg-white border text-sm font-medium inline-flex items-center gap-1.5"><Flame className="w-4 h-4 text-orange-500" /> Trending This Week (Sirsa Region)</span>
-          <span className="px-4 py-2 rounded-full bg-white border text-sm font-medium inline-flex items-center gap-1.5"><Award className="w-4 h-4 text-[#C8A951]" /> New Arrivals</span>
+          <span className="px-4 py-2 rounded-full bg-white border text-sm font-medium inline-flex items-center gap-1.5"><Award className="w-4 h-4 text-[#FFC800]" /> New Arrivals</span>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {best.slice(0,4).map(p=> <ProductCard key={p.id} product={p} />)}
         </div>
         <div className="mt-12">
-          <h3 className="text-[22px] font-bold text-[#0B1D3A] mb-6">Trending Now in Sirsa & Rania</h3>
+          <h3 className="text-[22px] font-bold text-[#0A1931] mb-6">Trending Now in Sirsa & Rania</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {trending.slice(0,4).map(p=> <ProductCard key={p.id} product={p} />)}
           </div>
@@ -83,7 +83,7 @@ export function TestimonialSection() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FBF6E9] border border-[#E9D09A]/30 text-[11px] font-bold tracking-widest uppercase text-[#C8A951]"><Star className="w-3 h-3 fill-current" /> Loved by Ellenabad</div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FFFDF0] border border-[#FFC800]/30 text-[11px] font-bold tracking-widest uppercase text-[#0A1931]"><Star className="w-3 h-3 text-[#FFC800] fill-current" /> Loved by Ellenabad</div>
             <h2 className="mt-4 text-[36px] lg:text-[44px] font-bold leading-[0.95] tracking-[-0.03em] text-[#0B1D3A]">What Families Say<br/><span className="text-slate-400 font-medium">About Us</span></h2>
             <p className="mt-4 text-slate-600 leading-relaxed">4.9/5 average from 842 reviews. We&apos;re not just a store, we&apos;re part of Ellenabad&apos;s family celebrations since 1998.</p>
             <div className="mt-8 grid grid-cols-3 gap-4">

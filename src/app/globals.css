@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --navy-950: #070f23;
-  --navy-900: #0b1d3a;
-  --navy-800: #122954;
-  --navy-700: #1a365d;
-  --gold-500: #c8a951;
-  --gold-400: #ddbb6a;
-  --gold-300: #e9d09a;
-  --gold-50: #fbf6e9;
+  --navy-950: #061126;
+  --navy-900: #0a1931;
+  --navy-800: #10264d;
+  --navy-700: #173566;
+  --gold-500: #ffc800;
+  --gold-400: #ffd438;
+  --gold-300: #ffe066;
+  --gold-50: #fffdf0;
+  --brand-yellow: #ffc800;
+  --brand-navy: #0a1931;
+  --brand-red: #d90429;
+  --brand-red-dark: #b8001f;
   --slate-50: #f8f9fb;
   --slate-100: #eef1f5;
   --slate-900: #0f172a;

@@ -50,46 +50,46 @@ export function SiteHeader() {
   return (
     <>
       {/* Top bar */}
-      <div className="hidden md:block bg-[#070F23] text-white/80 text-[12.5px]">
+      <div className="hidden md:block bg-[#0A1931] text-white/90 text-[12.5px]">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-8 h-9 flex items-center justify-between">
           <div className="flex items-center gap-5">
-            <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#C8A951]" /> Gurudwara Road, Near Singla Hospital, Ellenabad • Serving Sirsa, Rania, Dabwali, Hanumangarh</span>
-            <span className="hidden lg:flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#C8A951]" /> +91 98120-xxxxx • Mon-Sun 10AM-9PM</span>
+            <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#FFC800]" /> Gurudwara Road, Near Singla Hospital, Ellenabad • Serving Sirsa, Rania, Dabwali, Hanumangarh</span>
+            <span className="hidden lg:flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#FFC800]" /> +91 98120-xxxxx • Mon-Sun 10AM-9PM</span>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-white/60">Free alteration • Easy exchange in 7 days</span>
-            <div className="w-px h-4 bg-white/15" />
-            <Link href="/contact" className="hover:text-white transition">Store Location</Link>
+            <span className="text-white/70">Free alteration • Easy exchange in 7 days</span>
+            <div className="w-px h-4 bg-white/20" />
+            <Link href="/contact" className="hover:text-[#FFC800] transition">Store Location</Link>
           </div>
         </div>
       </div>
 
       {/* Main header */}
       <header className={cn("sticky top-0 z-40 w-full border-b transition-all duration-300",
-        scrolled ? "bg-white/90 backdrop-blur-xl border-slate-200 shadow-soft" : "bg-white border-slate-100"
+        scrolled ? "bg-white/95 backdrop-blur-xl border-slate-200 shadow-soft" : "bg-white border-slate-100"
       )}>
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="h-[68px] lg:h-[76px] flex items-center justify-between gap-4">
+          <div className="h-[74px] lg:h-[86px] flex items-center justify-between gap-4">
             <Logo />
 
             {/* Desktop nav */}
             <nav className="hidden xl:flex items-center gap-1">
               {navLinks.map(l => (
                 <Link key={l.label} href={l.href} className={cn("relative px-3.5 py-2 rounded-full text-[14px] font-medium transition-all flex items-center gap-1.5",
-                  l.highlight ? "text-[#0B1D3A] bg-[#F8F9FB] hover:bg-[#EEF1F5]" : "text-slate-600 hover:text-[#0B1D3A] hover:bg-slate-50"
+                  l.highlight ? "text-[#0A1931] bg-[#FFFDF0] hover:bg-[#FFF9E6] border border-[#FFC800]/30" : "text-slate-700 hover:text-[#0A1931] hover:bg-slate-50"
                 )}>
                   {l.label}
-                  {l.sub && <span className={cn("text-[10px] px-1.5 py-0.5 rounded-full font-bold", l.label==="Men" ? "bg-[#0B1D3A] text-white" : l.label==="Kids" ? "bg-[#C8A951] text-white" : "bg-slate-200 text-slate-600")}>{l.sub}</span>}
-                  {l.badge && <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold">{l.badge}</span>}
+                  {l.sub && <span className={cn("text-[10px] px-1.5 py-0.5 rounded-full font-bold", l.label==="Men" ? "bg-[#0A1931] text-white" : l.label==="Kids" ? "bg-[#FFC800] text-[#0A1931]" : "bg-slate-200 text-slate-700")}>{l.sub}</span>}
+                  {l.badge && <span className="absolute -top-1 -right-1 bg-[#D90429] text-white text-[9px] px-1.5 py-0.5 rounded-full font-bold shadow-sm">{l.badge}</span>}
                 </Link>
               ))}
               <div className="ml-2 relative group">
-                <button className="px-3.5 py-2 rounded-full text-[14px] font-medium text-slate-600 hover:text-[#0B1D3A] hover:bg-slate-50 flex items-center gap-1">More <ChevronDown className="w-4 h-4" /></button>
+                <button className="px-3.5 py-2 rounded-full text-[14px] font-medium text-slate-700 hover:text-[#0A1931] hover:bg-slate-50 flex items-center gap-1">More <ChevronDown className="w-4 h-4" /></button>
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-2xl shadow-premium border border-slate-100 p-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                  <Link href="/gallery" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm">Gallery</Link>
-                  <Link href="/about" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm">About Us</Link>
-                  <Link href="/blogs" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm">Fashion Blog</Link>
-                  <Link href="/contact" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm">Contact</Link>
+                  <Link href="/gallery" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700 hover:text-[#0A1931]">Gallery</Link>
+                  <Link href="/about" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700 hover:text-[#0A1931]">About Us</Link>
+                  <Link href="/blogs" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700 hover:text-[#0A1931]">Fashion Blog</Link>
+                  <Link href="/contact" className="block px-3 py-2 rounded-xl hover:bg-slate-50 text-sm font-medium text-slate-700 hover:text-[#0A1931]">Contact</Link>
                 </div>
               </div>
             </nav>
@@ -98,16 +98,16 @@ export function SiteHeader() {
             <div className="flex items-center gap-2">
               {/* Search */}
               <div className="hidden md:flex items-center">
-                <div className={cn("flex items-center gap-2 pl-4 pr-2 h-10 rounded-full border bg-[#F8F9FB] transition-all w-[280px] focus-within:w-[340px] focus-within:bg-white focus-within:border-[#0B1D3A]/20 focus-within:shadow-soft", searchOpen ? "w-[340px] bg-white" : "")}>
+                <div className={cn("flex items-center gap-2 pl-4 pr-2 h-10 rounded-full border bg-[#F8F9FB] transition-all w-[280px] focus-within:w-[340px] focus-within:bg-white focus-within:border-[#0A1931]/30 focus-within:shadow-soft", searchOpen ? "w-[340px] bg-white" : "")}>
                   <Search className="w-4 h-4 text-slate-400 flex-shrink-0" />
                   <input placeholder="Search shirts, frocks, jeans..." className="flex-1 bg-transparent outline-none text-[14px] placeholder:text-slate-400" onFocus={()=>setSearchOpen(true)} onBlur={()=>setSearchOpen(false)} suppressHydrationWarning />
-                  <span className="text-[11px] px-2 py-1 rounded-full bg-white border shadow-sm">⌘K</span>
+                  <span className="text-[11px] px-2 py-1 rounded-full bg-white border shadow-sm text-slate-500">⌘K</span>
                 </div>
               </div>
 
               {isAdmin && (
-                <Link href="/admin" className="flex items-center gap-1.5 h-10 px-4 rounded-full bg-[#0B1D3A] text-[#C8A951] border border-[#C8A951]/20 text-[13.5px] font-bold hover:bg-[#122954] transition shadow-soft">
-                  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <Link href="/admin" className="flex items-center gap-1.5 h-10 px-4 rounded-full bg-[#0A1931] text-[#FFC800] border border-[#FFC800]/30 text-[13.5px] font-bold hover:bg-[#122954] transition shadow-soft">
+                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                   <span>Admin Panel</span>
                 </Link>
               )}

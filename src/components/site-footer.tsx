@@ -6,12 +6,12 @@ import { store } from "@/lib/data"
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#070F23] text-white/80">
+    <footer className="bg-[#0A1931] text-white/80">
       {/* Newsletter teaser */}
       <div className="border-b border-white/10">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#C8A951] flex items-center justify-center text-[#070F23]"><Tag className="w-5 h-5" /></div>
+            <div className="w-10 h-10 rounded-full bg-[#FFC800] flex items-center justify-center text-[#0A1931]"><Tag className="w-5 h-5" /></div>
             <div>
               <p className="text-white font-semibold">Get 10% OFF on Wedding Season Shopping</p>
               <p className="text-sm text-white/60">Join 5,000+ families in Ellenabad who get exclusive offers</p>
@@ -19,7 +19,7 @@ export function SiteFooter() {
           </div>
           <div className="flex gap-2 w-full md:w-auto">
             <input placeholder="Your WhatsApp number" className="h-11 px-4 rounded-full bg-white/10 border border-white/10 placeholder:text-white/40 text-sm flex-1 md:w-[260px] outline-none focus:bg-white/15" suppressHydrationWarning />
-            <button className="h-11 px-6 rounded-full bg-[#C8A951] text-[#070F23] font-semibold text-sm hover:bg-[#DDBB6A] transition">Get Offer</button>
+            <button className="h-11 px-6 rounded-full bg-[#FFC800] text-[#0A1931] font-bold text-sm hover:bg-[#FFD438] transition">Get Offer</button>
           </div>
         </div>
       </div>
@@ -32,16 +32,16 @@ export function SiteFooter() {
             <p className="text-[14px] leading-relaxed text-white/60 max-w-[360px]">Ellenabad&apos;s most trusted family fashion destination since 1998. Premium menswear (45%), kids wear (35%), and women&apos;s ethnic wear. Visit us for wedding, festival, school & daily fashion.</p>
 
             <div className="mt-6 space-y-3 text-sm">
-              <div className="flex gap-3"><MapPin className="w-4 h-4 text-[#C8A951] mt-0.5 flex-shrink-0" /><span>{store.street}, Ellenabad, Sirsa, Haryana 125102<br /><span className="text-white/40 text-xs">Serving: Sirsa • Rania • Dabwali • Hanumangarh • Nearby Villages</span></span></div>
-              <div className="flex gap-3"><Phone className="w-4 h-4 text-[#C8A951]" /><a href="tel:+919812000000" className="hover:text-white">+91 98120-XXXXX / 94160-XXXXX</a></div>
-              <div className="flex gap-3"><Mail className="w-4 h-4 text-[#C8A951]" /><a href="mailto:hello@ajayreadymade.com" className="hover:text-white">hello@ajayreadymade.com</a></div>
-              <div className="flex gap-3"><Clock className="w-4 h-4 text-[#C8A951]" /><span>Mon-Sun: 10AM - 9PM • Festival Hours: 9AM-10PM</span></div>
+              <div className="flex gap-3"><MapPin className="w-4 h-4 text-[#FFC800] mt-0.5 flex-shrink-0" /><span>{store.street}, Ellenabad, Sirsa, Haryana 125102<br /><span className="text-white/40 text-xs">Serving: Sirsa • Rania • Dabwali • Hanumangarh • Nearby Villages</span></span></div>
+              <div className="flex gap-3"><Phone className="w-4 h-4 text-[#FFC800]" /><a href="tel:+919812000000" className="hover:text-white">+91 98120-XXXXX / 94160-XXXXX</a></div>
+              <div className="flex gap-3"><Mail className="w-4 h-4 text-[#FFC800]" /><a href="mailto:hello@ajayreadymade.com" className="hover:text-white">hello@ajayreadymade.com</a></div>
+              <div className="flex gap-3"><Clock className="w-4 h-4 text-[#FFC800]" /><span>Mon-Sun: 10AM - 9PM • Festival Hours: 9AM-10PM</span></div>
             </div>
 
             <div className="flex gap-2 mt-6">
-              <a href="https://www.instagram.com/ajayreadymade" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C8A951] hover:text-[#070F23] transition"><InstagramIcon className="w-4 h-4" /></a>
-              <a href="https://www.facebook.com/ajayreadymade" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C8A951] hover:text-[#070F23] transition"><FacebookIcon className="w-4 h-4" /></a>
-              <a href="https://www.youtube.com/@ajayreadymade" aria-label="YouTube" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#C8A951] hover:text-[#070F23] transition"><YoutubeIcon className="w-4 h-4" /></a>
+              <a href="https://www.instagram.com/ajayreadymade" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><InstagramIcon className="w-4 h-4" /></a>
+              <a href="https://www.facebook.com/ajayreadymade" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><FacebookIcon className="w-4 h-4" /></a>
+              <a href="https://www.youtube.com/@ajayreadymade" aria-label="YouTube" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><YoutubeIcon className="w-4 h-4" /></a>
               <a href={`https://wa.me/${store.whatsapp}`} aria-label="WhatsApp" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition"><WhatsappIcon className="w-4 h-4" /></a>
             </div>
           </div>

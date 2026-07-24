@@ -77,6 +77,14 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
   verification: { google: "google-site-verification-placeholder" },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    shortcut: ["/icon.svg"],
+    apple: [{ url: "/logo.png" }],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -136,11 +144,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="theme-color" content="#0B1D3A" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/logo.png" type="image/png" />
+        <meta name="theme-color" content="#0A1931" />
       </head>
       <body className="antialiased bg-[#FCFCFD] text-slate-900 overflow-x-hidden" suppressHydrationWarning>
-        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#0B1D3A] text-white px-4 py-2 rounded-full z-50">Skip to content</a>
+        <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#0A1931] text-[#FFC800] px-4 py-2 rounded-full z-50 font-bold border border-[#FFC800]/30">Skip to content</a>
         <SiteHeader />
         <main id="main">{children}</main>
         <SiteFooter />
