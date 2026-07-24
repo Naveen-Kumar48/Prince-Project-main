@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
-  verification: { google: "google-site-verification-placeholder" },
+  verification: { google: "AatxextV6LTcGVvKh0oSyMMfPsbXFEu-TcBBqYZZhn0" },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -157,6 +157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/logo.png" type="image/png" />
+        <meta name="google-site-verification" content="AatxextV6LTcGVvKh0oSyMMfPsbXFEu-TcBBqYZZhn0" />
         <meta name="theme-color" content="#0A1931" />
       </head>
       <body className="antialiased bg-[#FCFCFD] text-slate-900 overflow-x-hidden" suppressHydrationWarning>
