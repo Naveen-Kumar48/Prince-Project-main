@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: "IN"
     },
     geo: { "@type": "GeoCoordinates", latitude: 29.451, longitude: 74.657 },
-    telephone: "+91-98120-XXXXX",
+    telephone: "+91-95968-85527",
     email: "hello@ajayreadymade.com",
     openingHours: "Mo-Su 10:00-21:00",
     priceRange: "₹₹",
@@ -228,7 +228,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <main id="main">{children}</main>
         <SiteFooter />
         {/* WhatsApp float */}
-        <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919812000000"}?text=Hi%20Ajay%20Readymade%20Store%20Ellenabad%2C%20I%20want%20to%20enquire%20about%20products`} target="_blank" aria-label="Chat on WhatsApp" className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] shadow-premium flex items-center justify-center hover:scale-105 transition">
+        <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919596885527"}?text=Hi%20Ajay%20Readymade%20Store%20Ellenabad%2C%20I%20want%20to%20enquire%20about%20products`} target="_blank" aria-label="Chat on WhatsApp" className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#25D366] shadow-premium flex items-center justify-center hover:scale-105 transition">
           <WhatsappIcon className="w-7 h-7 text-white" />
         </a>
       </body>

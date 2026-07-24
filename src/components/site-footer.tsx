@@ -33,7 +33,7 @@ export function SiteFooter() {
 
             <div className="mt-6 space-y-3 text-sm">
               <div className="flex gap-3"><MapPin className="w-4 h-4 text-[#FFC800] mt-0.5 flex-shrink-0" /><span>{store.street}, Ellenabad, Sirsa, Haryana 125102<br /><span className="text-white/40 text-xs">Serving: Sirsa • Rania • Dabwali • Hanumangarh • Nearby Villages</span></span></div>
-              <div className="flex gap-3"><Phone className="w-4 h-4 text-[#FFC800]" /><a href="tel:+919812000000" className="hover:text-white">+91 98120-XXXXX / 94160-XXXXX</a></div>
+              <div className="flex gap-3"><Phone className="w-4 h-4 text-[#FFC800]" /><a href="tel:+919596885527" className="hover:text-white">+91 95968-85527</a></div>
               <div className="flex gap-3"><Mail className="w-4 h-4 text-[#FFC800]" /><a href="mailto:hello@ajayreadymade.com" className="hover:text-white">hello@ajayreadymade.com</a></div>
               <div className="flex gap-3"><Clock className="w-4 h-4 text-[#FFC800]" /><span>Mon-Sun: 10AM - 9PM • Festival Hours: 9AM-10PM</span></div>
             </div>

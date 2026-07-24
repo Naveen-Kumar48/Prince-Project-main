@@ -12,7 +12,7 @@ export default function ContactPage() {
           <div className="mt-8 grid gap-4">
             <div className="rounded-[20px] border bg-white p-6"><p className="font-semibold">Store Address (NAP)</p><p className="text-sm text-slate-600 mt-2">Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad, Sirsa, Haryana 125102</p></div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-[20px] border bg-white p-6"><p className="font-semibold">Call / WhatsApp</p><p className="text-sm mt-2">+91 98120-XXXXX<br/>+91 94160-XXXXX</p><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919812000000"}`} className="mt-3 inline-flex h-9 px-4 rounded-full bg-[#25D366] text-white text-sm">WhatsApp</a></div>
+              <div className="rounded-[20px] border bg-white p-6"><p className="font-semibold">Call / WhatsApp</p><p className="text-sm font-medium mt-2">+91 95968-85527</p><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919596885527"}`} className="mt-3 inline-flex items-center gap-1.5 h-9 px-4 rounded-full bg-[#25D366] text-white text-sm font-bold">WhatsApp Us</a></div>
               <div className="rounded-[20px] border bg-white p-6"><p className="font-semibold">Hours</p><p className="text-sm mt-2">Mon-Sun 10AM-9PM<br/>Festival 9AM-10PM<br/><span className="text-green-600">Open Now • Ellenabad</span></p></div>
             </div>
             <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1!2d74.657!3d29.451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMjnCsDI3JzAwLjAiTiA3NMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" className="w-full h-[320px] rounded-[20px] border" loading="lazy" />

@@ -54,7 +54,7 @@ export function SiteHeader() {
         <div className="max-w-[1440px] mx-auto px-6 lg:px-8 h-9 flex items-center justify-between">
           <div className="flex items-center gap-5">
             <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-[#FFC800]" /> Gurudwara Road, Near Singla Hospital, Ellenabad • Serving Sirsa, Rania, Dabwali, Hanumangarh</span>
-            <span className="hidden lg:flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#FFC800]" /> +91 98120-xxxxx • Mon-Sun 10AM-9PM</span>
+            <span className="hidden lg:flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-[#FFC800]" /> <a href="tel:+919596885527" className="hover:text-[#FFC800] transition">+91 95968-85527</a> • Mon-Sun 10AM-9PM</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-white/70">Free alteration • Easy exchange in 7 days</span>

@@ -14,7 +14,7 @@ export function StoreMap() {
             <div className="mt-8 space-y-4 text-sm">
               <div className="rounded-2xl bg-white border p-4 flex gap-3"><span className="w-8 h-8 rounded-full bg-[#FBF6E9] flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4 text-[#C8A951]" /></span><div><p className="font-semibold text-[#0B1D3A]">Full Address • NAP Consistent</p><p className="text-slate-600">{store.name}, {store.fullAddress}</p></div></div>
               <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-2xl bg-white border p-4"><p className="text-xs text-slate-500 uppercase font-bold tracking-wide flex items-center gap-1"><Phone className="w-3 h-3" /> Phone</p><p className="font-semibold text-[#0B1D3A] mt-1">+91 98120-XXXXX</p><p className="text-xs text-slate-500">Call • WhatsApp</p></div>
+                <div className="rounded-2xl bg-white border p-4"><p className="text-xs text-slate-500 uppercase font-bold tracking-wide flex items-center gap-1"><Phone className="w-3 h-3" /> Phone</p><p className="font-semibold text-[#0A1931] mt-1"><a href="tel:+919596885527" className="hover:text-[#FFC800]">+91 95968-85527</a></p><p className="text-xs text-slate-500">Call • WhatsApp</p></div>
                 <div className="rounded-2xl bg-white border p-4"><p className="text-xs text-slate-500 uppercase font-bold tracking-wide flex items-center gap-1"><Clock className="w-3 h-3" /> Hours</p><p className="font-semibold text-[#0B1D3A] mt-1">10AM-9PM Daily</p><p className="text-xs text-slate-500">Festival 9AM-10PM</p></div>
               </div>
               <div className="rounded-2xl bg-[#0B1D3A] text-white p-4 flex items-center justify-between">
