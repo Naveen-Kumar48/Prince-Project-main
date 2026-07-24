@@ -49,35 +49,35 @@ export function SiteFooter() {
           <div>
             <h4 className="text-white font-semibold mb-4">Shop Men • 45%</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/men/shirts" className="hover:text-white transition">Formal Shirts</Link></li>
-              <li><Link href="/men/t-shirts" className="hover:text-white transition">T-Shirts & Polos</Link></li>
-              <li><Link href="/men/jeans" className="hover:text-white transition">Jeans – Slim & Regular</Link></li>
-              <li><Link href="/men/cargo" className="hover:text-white transition">Cargo Pants</Link></li>
-              <li><Link href="/men/jackets" className="hover:text-white transition">Jackets & Blazers</Link></li>
-              <li><Link href="/men/kurta" className="hover:text-white transition">Kurta Pajama</Link></li>
-              <li><Link href="/collections/wedding" className="text-[#C8A951] hover:text-white">Wedding Collection</Link></li>
+              <li><Link href="/category/mens-formal-shirts" className="hover:text-white transition">Formal Shirts</Link></li>
+              <li><Link href="/category/mens-tshirts" className="hover:text-white transition">T-Shirts & Polos</Link></li>
+              <li><Link href="/category/mens-jeans" className="hover:text-white transition">Jeans – Slim & Regular</Link></li>
+              <li><Link href="/category/mens-cargo-pants" className="hover:text-white transition">Cargo Pants</Link></li>
+              <li><Link href="/category/mens-jackets" className="hover:text-white transition">Jackets & Blazers</Link></li>
+              <li><Link href="/category/mens-kurta-pajama" className="hover:text-white transition">Kurta Pajama</Link></li>
+              <li><Link href="/collections/wedding" className="text-[#FFC800] hover:text-white">Wedding Collection</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Kids Wear • 35%</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/kids/baby" className="hover:text-white transition">Baby Wear (0-3Y)</Link></li>
-              <li><Link href="/kids/school" className="hover:text-white transition">School Uniforms</Link></li>
-              <li><Link href="/kids/party" className="hover:text-white transition">Party Frocks & Dresses</Link></li>
-              <li><Link href="/kids/winter" className="hover:text-white transition">Winter Wear • Hoodies</Link></li>
-              <li><Link href="/kids/ethnic" className="hover:text-white transition">Ethnic & Festival</Link></li>
-              <li><Link href="/kids/jeans" className="hover:text-white transition">Jeans & Track Pants</Link></li>
-              <li><Link href="/kids/new" className="text-[#C8A951] hover:text-white">New Arrivals</Link></li>
+              <li><Link href="/category/baby-wear" className="hover:text-white transition">Baby Wear (0-3Y)</Link></li>
+              <li><Link href="/category/kids-school-wear" className="hover:text-white transition">School Uniforms</Link></li>
+              <li><Link href="/category/kids-party-dresses" className="hover:text-white transition">Party Frocks & Dresses</Link></li>
+              <li><Link href="/category/kids-winter-wear" className="hover:text-white transition">Winter Wear • Hoodies</Link></li>
+              <li><Link href="/category/kids-ethnic-wear" className="hover:text-white transition">Ethnic & Festival</Link></li>
+              <li><Link href="/category/kids-jeans-pants" className="hover:text-white transition">Jeans & Track Pants</Link></li>
+              <li><Link href="/new-arrivals" className="text-[#FFC800] hover:text-white">New Arrivals</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Women • 20% & More</h4>
             <ul className="space-y-2.5 text-sm">
-              <li><Link href="/women/kurti" className="hover:text-white transition">Kurti & Kurti Sets</Link></li>
-              <li><Link href="/women/palazzo" className="hover:text-white transition">Palazzo & Leggings</Link></li>
-              <li><Link href="/women/ethnic" className="hover:text-white transition">Ethnic Festive Wear</Link></li>
+              <li><Link href="/category/womens-kurti-sets" className="hover:text-white transition">Kurti & Kurti Sets</Link></li>
+              <li><Link href="/category/womens-palazzo-leggings" className="hover:text-white transition">Palazzo & Leggings</Link></li>
+              <li><Link href="/category/womens-ethnic-wear" className="hover:text-white transition">Ethnic Festive Wear</Link></li>
               <li><Link href="/collections/festival" className="hover:text-white transition">Festival Edit</Link></li>
               <li><Link href="/trending" className="hover:text-white transition">Trending Now</Link></li>
               <li className="pt-2"><span className="text-white font-medium">Company</span></li>

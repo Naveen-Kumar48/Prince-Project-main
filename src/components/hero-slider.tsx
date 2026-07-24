@@ -12,9 +12,12 @@ export function HeroSlider() {
   useEffect(() => {
     // Fetch slides from media API
     fetch("/api/media?section=banner")
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error ${res.status}`)
+        return res.json()
+      })
       .then(data => {
-        if (data.items && data.items.length > 0) {
+        if (data && data.items && data.items.length > 0) {
           const activeItems = data.items.filter((item: any) => item.isActive);
           if (activeItems.length > 0) {
             const mapped = activeItems.map((item: any) => {
@@ -37,7 +40,10 @@ export function HeroSlider() {
           }
         }
       })
-      .catch(err => console.error("Error loading db banners:", err))
+      .catch(err => {
+        // Fallback to static heroSlides safely
+        console.warn("Using default hero slides fallback:", err.message)
+      })
   }, [])
 
   useEffect(() => {

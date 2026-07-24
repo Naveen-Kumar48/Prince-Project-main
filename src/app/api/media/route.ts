@@ -2,15 +2,20 @@ import { NextResponse } from "next/server"
 import { getMediaItems, createMediaItem, updateMediaItem, deleteMediaItem } from "@/lib/db-helper"
 
 export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url)
-  const section = searchParams.get("section")
-  
-  let items = await getMediaItems()
-  if (section) {
-    items = items.filter(item => item.section === section)
+  try {
+    const { searchParams } = new URL(req.url)
+    const section = searchParams.get("section")
+    
+    let items = await getMediaItems()
+    if (section) {
+      items = items.filter(item => item.section === section)
+    }
+    
+    return NextResponse.json({ items })
+  } catch (error: any) {
+    console.error("Error fetching media items:", error)
+    return NextResponse.json({ items: [], error: error.message }, { status: 500 })
   }
-  
-  return NextResponse.json({ items })
 }
 
 export async function POST(req: Request) {
