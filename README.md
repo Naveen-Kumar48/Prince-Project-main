@@ -61,7 +61,7 @@ A high-performance, modern, and localized SEO-optimized digital catalog and lead
 | **Icons** | Lucide React | Clean, responsive vector icons |
 | **Utilities** | `clsx` + `tailwind-merge` | Conditional and merged dynamic class combinations |
 
----
+------------------------------------
 
 ## ✨ Key Features
 
