@@ -112,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     openingHours: "Mo-Su 10:00-21:00",
     priceRange: "₹₹",
     areaServed: [{ "@type": "City", name: "Ellenabad" }, { "@type": "City", name: "Sirsa" }, { "@type": "City", name: "Rania" }, { "@type": "City", name: "Dabwali" }, { "@type": "City", name: "Hanumangarh" }],
-    sameAs: ["https://www.facebook.com/ajayreadymade", "https://www.instagram.com/ajayreadymade"],
+    sameAs: ["https://www.facebook.com/ajayreadymade", "https://www.instagram.com/ajay_readymade_store/"],
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "842", bestRating: "5", worstRating: "1" },
   };
 

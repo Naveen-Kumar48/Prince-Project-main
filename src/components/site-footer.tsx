@@ -39,7 +39,7 @@ export function SiteFooter() {
             </div>
 
             <div className="flex gap-2 mt-6">
-              <a href="https://www.instagram.com/ajayreadymade" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><InstagramIcon className="w-4 h-4" /></a>
+              <a href="https://www.instagram.com/ajay_readymade_store/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><InstagramIcon className="w-4 h-4" /></a>
               <a href="https://www.facebook.com/ajayreadymade" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><FacebookIcon className="w-4 h-4" /></a>
               <a href="https://www.youtube.com/@ajayreadymade" aria-label="YouTube" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FFC800] hover:text-[#0A1931] transition"><YoutubeIcon className="w-4 h-4" /></a>
               <a href={`https://wa.me/${store.whatsapp}`} aria-label="WhatsApp" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition"><WhatsappIcon className="w-4 h-4" /></a>
@@ -102,19 +102,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Local SEO towns */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <p className="text-xs tracking-wide text-white/40 uppercase font-semibold mb-3">Popular Searches in Your Area</p>
-          <div className="flex flex-wrap gap-2 text-xs">
-            {[
-              "Clothing store Ellenabad", "Men's wear Ellenabad", "Kids wear Ellenabad", "Formal shirts Sirsa",
-              "School dress Ellenabad", "Wedding blazer Ellenabad", "Frock for kids Rania", "Jeans shop Dabwali",
-              "Festival kurta Hanumangarh", "Best readymade store Sirsa district", "Family fashion store Haryana"
-            ].map(k => (
-              <span key={k} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/50">{k}</span>
-            ))}
-          </div>
-        </div>
+
 
         <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <p>© {new Date().getFullYear()} Ajay Readymade Store, Ellenabad. All rights reserved. Built for families of Haryana, Punjab & Rajasthan.</p>
