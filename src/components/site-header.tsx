@@ -4,8 +4,6 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Search, Menu, X, MapPin, Phone, ChevronDown } from "lucide-react"
 import { Logo } from "./logo"
-import { WhatsappIcon } from "./social-icons"
-import { store } from "@/lib/data"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -145,28 +143,7 @@ export function SiteHeader() {
                 </Link>
               )}
 
-              {/* Desktop / Tablet WhatsApp Pill */}
-              <a 
-                href={`https://wa.me/${store.whatsapp}?text=Hi%20Ajay%20Readymade%20Store%2C%20I%20want%20to%20enquire%20about%20products`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 h-9 lg:h-10 px-3 sm:px-3.5 lg:px-4 rounded-full bg-[#25D366] text-white text-[12.5px] lg:text-[13px] font-bold hover:bg-[#20bd5a] transition shadow-sm flex-shrink-0"
-                aria-label="Enquire on WhatsApp"
-              >
-                <WhatsappIcon className="w-3.5 h-3.5 lg:w-4 lg:h-4 text-white flex-shrink-0" />
-                <span>Enquire</span>
-              </a>
 
-              {/* Mobile WhatsApp Icon Button */}
-              <a 
-                href={`https://wa.me/${store.whatsapp}?text=Hi%20Ajay%20Readymade%20Store%2C%20I%20want%20to%20enquire%20about%20products`} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="sm:hidden flex items-center justify-center w-9 h-9 rounded-full bg-[#25D366] text-white hover:bg-[#20bd5a] transition shadow-sm flex-shrink-0"
-                aria-label="Enquire on WhatsApp"
-              >
-                <WhatsappIcon className="w-4 h-4 text-white flex-shrink-0" />
-              </a>
 
               <button onClick={()=>setMobileOpen(v=>!v)} className="lg:hidden w-10 h-10 rounded-full bg-[#F8F9FB] border border-slate-200/60 flex items-center justify-center text-[#0A1931] flex-shrink-0">
                 {mobileOpen ? <X className="w-5 h-5"/> : <Menu className="w-5 h-5"/>}
