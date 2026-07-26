@@ -205,7 +205,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/logo.png" type="image/png" />
-        <meta name="google-site-verification" content="AatxextV6LTcGVvKh0oSyMMfPsbXFEu-TcBBqYZZhn0" />
         <meta name="geo.region" content="IN-HR" />
         <meta name="geo.placename" content="Ellenabad, Sirsa, Haryana" />
         <meta name="geo.position" content="29.451;74.657" />
