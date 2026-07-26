@@ -15,7 +15,7 @@ A high-performance, modern, and localized SEO-optimized digital catalog and lead
 
 </div>
 
----
+---------------------------------------------------------
 
 ## 📖 Table of Contents
 
