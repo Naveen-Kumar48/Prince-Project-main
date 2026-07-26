@@ -2,7 +2,8 @@ import { MetadataRoute } from "next"
 import { products, blogs, categoryTiles } from "@/lib/data"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://ajayreadymade.com"
+  const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || ""
+  const base = rawUrl && !rawUrl.includes("localhost") ? rawUrl : "https://ajayreadymade.com"
   
   const staticRoutes = [
     "", "/men", "/kids", "/women", "/trending", "/new-arrivals", 

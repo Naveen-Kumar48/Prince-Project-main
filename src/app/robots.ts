@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next"
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://ajayreadymade.com"
+  const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || ""
+  const base = rawUrl && !rawUrl.includes("localhost") ? rawUrl : "https://ajayreadymade.com"
   return {
     rules: [
       {
