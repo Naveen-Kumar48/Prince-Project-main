@@ -14,16 +14,36 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const c = cities.find((x) => x.slug === city);
   if (!c) return { title: "City not found" };
   return {
-    title: `Ajay Readymade Store | Clothing Store in ${c.name}`,
-    description: `Ajay Readymade Store serves ${c.name} (${c.distance} from Ellenabad main store). Best Men's, Women's & Kids Wear at affordable prices. Visit us on Gurudwara Road, Near Singla Hospital, Ellenabad.`,
+    title: `Best Fashion Shop near ${c.name} | Ajay Readymade Store Ellenabad`,
+    description: `Looking for the best fashion shop near ${c.name}? Ajay Readymade Store is just ${c.distance} away in Ellenabad \u2013 your nearest clothing store for Men's, Women's & Kids Wear. Affordable prices, 4.9★ rated, open 7 days.`,
     alternates: { canonical: `/${c.slug}` },
     keywords: [
+      // Near-me intent for this city
+      `best fashion shop near ${c.name}`,
+      `fashion shop near me ${c.name}`,
+      `clothing store near ${c.name}`,
+      `readymade shop near ${c.name}`,
+      `garments shop near ${c.name}`,
+      `best clothing store near ${c.name}`,
+      `nearest readymade store from ${c.name}`,
+      `men's wear shop near ${c.name}`,
+      `kids wear shop near ${c.name}`,
+      `women's wear shop near ${c.name}`,
+      `family clothing store near ${c.name}`,
+      // City-specific
       `Clothing Store in ${c.name}`,
       `Readymade Store in ${c.name}`,
       `Men's Wear in ${c.name}`,
       `Kids Wear in ${c.name}`,
+      `Women's Wear in ${c.name}`,
       `Ajay Readymade Store ${c.name}`,
       `${c.name} garments shop`,
+      `${c.name} fashion boutique`,
+      `affordable clothes ${c.name}`,
+      `branded readymade store near ${c.name}`,
+      // Ellenabad as the destination
+      `Readymade Store Ellenabad near ${c.name}`,
+      `best clothing shop Ellenabad serving ${c.name}`,
     ],
   };
 }
@@ -37,6 +57,29 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
     .filter((p) => p.isFeatured)
     .slice(0, 6);
 
+  const cityLocalBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    name: `Ajay Readymade Store – Best Fashion Shop near ${c.name}`,
+    image: "https://ajayreadymade.com/og-image.jpg",
+    description: `Ajay Readymade Store is the best fashion shop and clothing store near ${c.name}, just ${c.distance} from the Ellenabad main store. Serving ${c.name} residents with Men's Wear, Women's Wear, and Kids Wear at the most affordable prices.`,
+    url: `https://ajayreadymade.com/${c.slug}`,
+    telephone: "+91-95968-85527",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Gurudwara Road, Near Singla Hospital",
+      addressLocality: "Ellenabad",
+      addressRegion: "Haryana",
+      postalCode: "125102",
+      addressCountry: "IN"
+    },
+    geo: { "@type": "GeoCoordinates", latitude: 29.451, longitude: 74.657 },
+    areaServed: { "@type": "City", name: c.name },
+    priceRange: "₹₹",
+    openingHours: ["Mo-Sa 10:00-21:00", "Su 11:00-20:00"],
+    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "842" },
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -48,17 +91,18 @@ export default async function CityPage({ params }: { params: Promise<{ city: str
 
   return (
     <div className="bg-[#FCFCFD]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(cityLocalBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="max-w-[1440px] mx-auto px-6 lg:px-8 py-10">
         {/* Hero */}
         <div className="rounded-[28px] bg-[#0B1D3A] p-8 lg:p-12 text-white">
           <h1 className="text-[34px] lg:text-[46px] font-bold leading-[0.95] tracking-[-0.03em]">
-            Ajay Readymade Store – Serving {c.name}
+            Best Fashion Shop near {c.name} – Ajay Readymade Store
           </h1>
           <p className="mt-4 max-w-2xl text-white/75">
-            {c.desc} We deliver the same quality, pricing, and family fashion
-            experience that makes us Ellenabad&apos;s #1 clothing store.
+            Searching for a clothing store near you in {c.name}? Ajay Readymade Store is your nearest top-rated fashion shop, just {c.distance} away in Ellenabad. {c.desc} We deliver the same quality, pricing, and family fashion
+            experience that makes us the #1 clothing store for {c.name} shoppers.
           </p>
         </div>
 

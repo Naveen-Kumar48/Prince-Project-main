@@ -28,28 +28,74 @@ export const metadata: Metadata = {
   },
   description: "Shop the latest Men's, Women's & Kids Wear at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Affordable prices, quality products & new arrivals every week.",
   keywords: [
+    // ── Brand & Store Identity ──────────────────────────────
     "Ajay Readymade Store",
+    "Ajay Readymade Ellenabad",
+    "Ajay Readymade Store Gurudwara Road",
+
+    // ── Near-Me High-Intent Keywords ────────────────────────
+    "best fashion shop near me",
+    "fashion shop near me",
+    "clothing store near me",
+    "readymade shop near me",
+    "garments shop near me",
+    "men's wear shop near me",
+    "kids wear shop near me",
+    "women's wear shop near me",
+    "best readymade store near me",
+    "cheap clothing store near me",
+    "family clothing store near me",
+    "shirt shop near me Ellenabad",
+    "jeans shop near me Ellenabad",
+    "school uniform shop near me Ellenabad",
+    "ethnic wear shop near me Ellenabad",
+
+    // ── Ellenabad Local Keywords ─────────────────────────────
+    "best fashion shop in Ellenabad",
+    "best clothing store in Ellenabad",
+    "best readymade shop in Ellenabad",
+    "top garments shop Ellenabad",
     "Readymade Store in Ellenabad",
     "Clothing Store in Ellenabad",
-    "Best Clothing Store in Ellenabad",
     "Fashion Store in Ellenabad",
     "Garments Shop in Ellenabad",
-    "Family Clothing Store",
-    "Men's Wear Shop",
-    "Women's Wear Shop",
-    "Kids Wear Shop",
     "Readymade Garments Ellenabad",
     "Fashion Boutique Ellenabad",
     "Men's Wear Ellenabad",
     "Women's Wear Ellenabad",
     "Kids Wear Ellenabad",
-    "Best Readymade Shop in Ellenabad",
-    "Affordable Clothing Store",
-    "Men's shirt shop near Singla Hospital Ellenabad",
-    "Best clothing shop near Gurudwara Road Ellenabad",
     "Jeans shop in Ellenabad",
     "School wear shop in Ellenabad",
-    "Kids dress shop in Ellenabad"
+    "Kids dress shop in Ellenabad",
+    "Men's shirt shop near Singla Hospital Ellenabad",
+    "best clothing shop near Gurudwara Road Ellenabad",
+    "affordable clothing shop Ellenabad",
+    "branded clothes shop Ellenabad",
+    "winter wear shop Ellenabad",
+    "wedding collection shop Ellenabad",
+    "kurta pajama shop Ellenabad",
+
+    // ── Nearby City Keywords (serve area) ───────────────────
+    "fashion shop near Sirsa",
+    "clothing store near Sirsa",
+    "best garments shop Sirsa",
+    "readymade shop Rania",
+    "clothing shop near Rania Haryana",
+    "fashion shop near Dabwali",
+    "garments shop Dabwali",
+    "clothing store near Hanumangarh",
+    "family fashion store Hanumangarh",
+
+    // ── Category + Location ──────────────────────────────────
+    "Men's Wear Shop Ellenabad",
+    "Women's Wear Shop Ellenabad",
+    "Kids Wear Shop Ellenabad",
+    "Family Clothing Store Ellenabad",
+    "School uniform shop Ellenabad Sirsa district",
+    "party wear shop Ellenabad",
+    "casual wear shop Ellenabad",
+    "formal shirt shop Ellenabad",
+    "traditional wear shop Ellenabad Haryana",
   ],
   authors: [{ name: "Ajay Readymade Store" }],
   creator: "Ajay Readymade Store",
@@ -93,11 +139,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "ClothingStore",
     "@id": `${siteUrl}/#organization`,
     name: "Ajay Readymade Store",
-    alternateName: "Ajay Readymade",
+    alternateName: ["Ajay Readymade", "Ajay Fashion Store", "Ajay Readymade Ellenabad"],
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     image: `${siteUrl}/og-image.jpg`,
-    description: "Ajay Readymade Store is a trusted clothing and readymade garments shop in Ellenabad offering quality Men's Wear, Women's Wear, and Kids Wear at affordable prices. Visit us on Gurudwara Road, Near Singla Hospital, for the latest fashion collections and family shopping.",
+    description: "Ajay Readymade Store is the best fashion and readymade garments shop in Ellenabad, Haryana. Offering quality Men's Wear, Women's Wear, and Kids Wear at affordable prices since 1998. Located on Gurudwara Road, Near Singla Hospital, Ellenabad – the #1 family clothing store serving Ellenabad, Sirsa, Rania, Dabwali, and Hanumangarh.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Gurudwara Road, Near Singla Hospital",
@@ -107,13 +153,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       addressCountry: "IN"
     },
     geo: { "@type": "GeoCoordinates", latitude: 29.451, longitude: 74.657 },
+    hasMap: "https://maps.google.com/?q=Ajay+Readymade+Store+Ellenabad",
     telephone: "+91-95968-85527",
     email: "hello@ajayreadymade.com",
-    openingHours: "Mo-Su 10:00-21:00",
+    openingHours: ["Mo-Sa 10:00-21:00", "Su 11:00-20:00"],
+    openingHoursSpecification: [
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], opens: "10:00", closes: "21:00" },
+      { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "11:00", closes: "20:00" }
+    ],
     priceRange: "₹₹",
-    areaServed: [{ "@type": "City", name: "Ellenabad" }, { "@type": "City", name: "Sirsa" }, { "@type": "City", name: "Rania" }, { "@type": "City", name: "Dabwali" }, { "@type": "City", name: "Hanumangarh" }],
-    sameAs: ["https://www.facebook.com/ajayreadymade", "https://www.instagram.com/ajay_readymade_store/"],
+    currenciesAccepted: "INR",
+    paymentAccepted: "Cash, UPI, Credit Card, Debit Card",
+    areaServed: [
+      { "@type": "City", name: "Ellenabad", sameAs: "https://en.wikipedia.org/wiki/Ellenabad" },
+      { "@type": "City", name: "Sirsa" },
+      { "@type": "City", name: "Rania" },
+      { "@type": "City", name: "Dabwali" },
+      { "@type": "City", name: "Hanumangarh" },
+      { "@type": "AdministrativeArea", name: "Sirsa District", containedIn: { "@type": "State", name: "Haryana" } }
+    ],
+    sameAs: [
+      "https://www.facebook.com/ajayreadymade",
+      "https://www.instagram.com/ajay_readymade_store/"
+    ],
     aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "842", bestRating: "5", worstRating: "1" },
+    keywords: "best fashion shop near me, clothing store near me, readymade shop Ellenabad, garments shop Ellenabad, men's wear Ellenabad, kids wear Ellenabad",
   };
 
   const websiteSchema = {
@@ -142,6 +206,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
+      {
+        "@type": "Question",
+        name: "Which is the best fashion shop near me in Ellenabad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store on Gurudwara Road, Near Singla Hospital, Ellenabad (Haryana 125102) is the #1 rated fashion and clothing shop in Ellenabad with a 4.9-star rating from 842+ customers. It is the best fashion shop near you if you are in Ellenabad, Sirsa, Rania, Dabwali, or Hanumangarh."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "What is the best clothing store near me in Ellenabad, Haryana?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store is the best clothing store near you in Ellenabad, Haryana. Located at Gurudwara Road, Near Singla Hospital, Ellenabad – Sirsa District, Haryana 125102. We offer Men's Wear, Women's Wear, and Kids Wear at affordable prices since 1998."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Is there a readymade garments shop near me in Ellenabad?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes! Ajay Readymade Store is the most trusted readymade garments shop near you in Ellenabad. We carry ready-to-wear collections for Men, Women, and Kids. Open 7 days a week from 10 AM to 9 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Where is the nearest fashion shop from Sirsa?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store in Ellenabad is just 25 km from Sirsa, making it the nearest top-rated fashion and clothing shop for Sirsa residents. We offer the same quality Men's, Women's, and Kids Wear at prices you won't find in Sirsa."
+        }
+      },
       {
         "@type": "Question",
         name: "What is the best clothing and readymade store in Ellenabad?",
@@ -179,7 +275,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         name: "What are the opening hours of Ajay Readymade Store Ellenabad?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ajay Readymade Store is open Monday through Sunday from 10:00 AM to 9:00 PM, with extended hours during festival seasons."
+          text: "Ajay Readymade Store is open Monday to Saturday 10:00 AM to 9:00 PM and Sunday 11:00 AM to 8:00 PM, with extended hours during festival seasons."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Which fashion shop serves customers from Rania and Dabwali?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Ajay Readymade Store in Ellenabad is just 12 km from Rania and 35 km from Dabwali. Customers from both cities regularly shop here for our latest Men's, Women's, and Kids fashion at the best prices in the region."
         }
       }
     ]
