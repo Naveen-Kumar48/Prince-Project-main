@@ -1,15 +1,18 @@
 import { MetadataRoute } from "next"
 import { products, blogs, categoryTiles } from "@/lib/data"
 
+export const revalidate = 86400 // Cache sitemap for 24 hours
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || ""
-  const base = rawUrl && !rawUrl.includes("localhost") ? rawUrl : "https://ajayreadymade.com"
+  // Ensure base URL has NO trailing slash to prevent double-slash URLs like https://site.com//men
+  const base = (rawUrl && !rawUrl.includes("localhost") ? rawUrl : "https://ajayreadymade.com").replace(/\/+$/, "")
   
   const staticRoutes = [
     "", "/men", "/kids", "/women", "/trending", "/new-arrivals", 
     "/offers", "/brands", "/gallery", "/about", "/blogs", "/contact"
   ].map(r => ({
-    url: `${base}${r}`,
+    url: `${base}${r || "/"}`,
     lastModified: new Date(),
     priority: r === "" ? 1.0 : 0.9,
     changeFrequency: "daily" as const
@@ -33,23 +36,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const
   }))
 
-  const categoryRoutes = categoryTiles.map(c => ({
+  const categoryRoutes = (categoryTiles || []).map(c => ({
     url: `${base}/category/${c.slug}`,
     lastModified: new Date(),
     priority: 0.8,
     changeFrequency: "weekly" as const
   }))
 
-  const productRoutes = products.map(p => ({
+  const productRoutes = (products || []).map(p => ({
     url: `${base}/product/${p.slug}`,
     lastModified: new Date(),
     priority: 0.75,
     changeFrequency: "weekly" as const
   }))
 
-  const blogRoutes = blogs.map(b => ({
+  const blogRoutes = (blogs || []).map(b => ({
     url: `${base}/blogs/${b.slug}`,
-    lastModified: new Date(b.date),
+    lastModified: b.date ? new Date(b.date) : new Date(),
     priority: 0.7,
     changeFrequency: "monthly" as const
   }))
