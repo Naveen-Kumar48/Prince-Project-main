@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "affordable clothes shop near me",
     "top-rated clothing store near me",
 
-    // ── Ellenabad Local Keywords ─────────────────────────────
+    // ── Ellenabad Local & Landmark Keywords ─────────────────
     "best fashion shop in Ellenabad",
     "best clothing store in Ellenabad",
     "best readymade shop in Ellenabad",
@@ -76,6 +76,14 @@ export const metadata: Metadata = {
     "Kids dress shop in Ellenabad",
     "Men's shirt shop near Singla Hospital Ellenabad",
     "best clothing shop near Gurudwara Road Ellenabad",
+    "garments store near Singla Hospital Ellenabad",
+    "readymade store Main Market Ellenabad",
+    "clothing store Anaj Mandi Ellenabad",
+    "kapda shop Railway Road Ellenabad",
+    "fashion shop near Bus Stand Ellenabad",
+    "readymade garments Nohria Bazar Ellenabad",
+    "clothes shop College Road Ellenabad",
+    "garments store Main Chowk Ellenabad",
     "affordable clothing shop Ellenabad",
     "branded clothes shop Ellenabad",
     "winter wear shop Ellenabad",
@@ -109,6 +117,21 @@ export const metadata: Metadata = {
     "cargo pants shop Ellenabad",
     "lehenga choli shop Ellenabad",
 
+    // ── Ellenabad Tehsil & Village Keywords ─────────────────
+    "best fashion shop Nathusari Chopta",
+    "clothing store Chopta Sirsa",
+    "readymade garments shop Jiwan Nagar",
+    "garments shop Mallekan Ellenabad",
+    "clothing store Talwara Khurd",
+    "best readymade store Kalanwali",
+    "fashion shop Santoshnagar Ellenabad",
+    "clothing shop Jamal Sirsa",
+    "readymade store Pohraka",
+    "garments shop Kuttabadh",
+    "clothing store Mithanpura",
+    "readymade garments Ding Sirsa",
+    "clothing shop Khairpur Sirsa",
+
     // ── Haryana & Regional Keywords ─────────────────────────
     "best clothing store in Sirsa district Haryana",
     "readymade store Haryana",
@@ -120,7 +143,7 @@ export const metadata: Metadata = {
     "top fashion store Haryana",
     "affordable family clothes Haryana",
 
-    // ── Nearby City Keywords (serve area) ───────────────────
+    // ── Nearby City & Border Keywords (serve area) ───────────
     "fashion shop near Sirsa",
     "clothing store near Sirsa",
     "best garments shop Sirsa",
@@ -130,6 +153,14 @@ export const metadata: Metadata = {
     "garments shop Dabwali",
     "clothing store near Hanumangarh",
     "family fashion store Hanumangarh",
+    "best fashion shop Tibbi Rajasthan",
+    "readymade store Rawatsar Hanumangarh",
+    "garments shop Nohar Rajasthan",
+    "clothing store Sangaria Rajasthan",
+    "fashion boutique Sadulshahar",
+    "best clothing shop near Rajasthan border Haryana",
+    "men's wear shop Hanumangarh Town",
+    "kids wear shop Hanumangarh Junction",
     "readymade store near Sirsa",
     "men's clothing shop Sirsa",
     "kids wear Sirsa",
@@ -138,7 +169,20 @@ export const metadata: Metadata = {
     "branded clothing near Dabwali",
     "family clothing near Hanumangarh",
 
-    // ── Category + Location ──────────────────────────────────
+    // ── Vernacular & Hindi Search Intent Keywords ────────────
+    "kapde ki dukan Ellenabad",
+    "best kapda shop in Ellenabad",
+    "saste kapde ki dukan Ellenabad",
+    "readymade kapda dukan Near Singla Hospital",
+    "garments kapde dukan Sirsa district",
+    "readymade suit ki dukan Ellenabad",
+    "pant shirt ki dukan Ellenabad",
+    "wedding dress ki dukan Ellenabad",
+    "school dress uniform dukan Ellenabad",
+    "ladies suit kurti dukan Ellenabad",
+    "kids kapde ki dukan Ellenabad",
+
+    // ── Category + Location Keywords ─────────────────────────
     "Men's Wear Shop Ellenabad",
     "Women's Wear Shop Ellenabad",
     "Kids Wear Shop Ellenabad",
@@ -150,14 +194,18 @@ export const metadata: Metadata = {
     "traditional wear shop Ellenabad Haryana",
     "summer collection Ellenabad",
     "winter collection Ellenabad",
-    "new collection Ellenabad 2025",
-    "wedding collection Ellenabad 2025",
+    "new collection Ellenabad 2026",
+    "wedding collection Ellenabad 2026",
     "men's formal wear Ellenabad",
     "men's casual wear Ellenabad",
     "kids winter wear Ellenabad",
     "kids party wear Ellenabad",
     "girls frock shop Ellenabad",
     "boys T-shirt shop Ellenabad",
+    "coat pant store Ellenabad",
+    "men's waistcoats and kurta Ellenabad",
+    "fancy girls frock and lehenga Ellenabad",
+    "newborn baby clothing store Ellenabad",
 
     // ── Price-Intent & Deal Keywords ─────────────────────────
     "cheap clothes Ellenabad",
@@ -223,7 +271,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     image: `${siteUrl}/og-image.jpg`,
-    description: "Ajay Readymade Store is the best fashion and readymade garments shop in Ellenabad, Haryana. Offering quality Men's Wear, Women's Wear, and Kids Wear at affordable prices since 1998. Located on Gurudwara Road, Near Singla Hospital, Ellenabad – the #1 family clothing store serving Ellenabad, Sirsa, Rania, Dabwali, and Hanumangarh.",
+    description: "Ajay Readymade Store is the best fashion and readymade garments shop in Ellenabad, Haryana. Offering quality Men's Wear, Women's Wear, and Kids Wear at affordable prices since 1998. Located on Gurudwara Road, Near Singla Hospital, Ellenabad – the #1 family clothing store serving Ellenabad, Sirsa, Rania, Dabwali, Hanumangarh, Nathusari Chopta, Jiwan Nagar, Kalanwali, Tibbi, and Rawatsar.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Gurudwara Road, Near Singla Hospital",
@@ -250,6 +298,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       { "@type": "City", name: "Rania" },
       { "@type": "City", name: "Dabwali" },
       { "@type": "City", name: "Hanumangarh" },
+      { "@type": "City", name: "Nathusari Chopta" },
+      { "@type": "City", name: "Jiwan Nagar" },
+      { "@type": "City", name: "Kalanwali" },
+      { "@type": "City", name: "Tibbi" },
+      { "@type": "City", name: "Rawatsar" },
       { "@type": "AdministrativeArea", name: "Sirsa District", containedIn: { "@type": "State", name: "Haryana" } }
     ],
     sameAs: [

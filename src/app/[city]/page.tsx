@@ -30,6 +30,13 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       `kids wear shop near ${c.name}`,
       `women's wear shop near ${c.name}`,
       `family clothing store near ${c.name}`,
+      // Vernacular & Local Query intent
+      `kapde ki dukan near ${c.name}`,
+      `best kapda shop near ${c.name}`,
+      `saste kapde ki dukan near ${c.name}`,
+      `readymade suit shop near ${c.name}`,
+      `wedding coat pant blazer shop ${c.name}`,
+      `school dress uniform shop near ${c.name}`,
       // City-specific
       `Clothing Store in ${c.name}`,
       `Readymade Store in ${c.name}`,
@@ -41,9 +48,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       `${c.name} fashion boutique`,
       `affordable clothes ${c.name}`,
       `branded readymade store near ${c.name}`,
-      // Ellenabad as the destination
+      `wedding collection near ${c.name}`,
+      `festival shopping near ${c.name}`,
+      // Ellenabad destination & location linkage
       `Readymade Store Ellenabad near ${c.name}`,
       `best clothing shop Ellenabad serving ${c.name}`,
+      `garments shop Gurudwara Road Ellenabad serving ${c.name}`,
     ],
   };
 }

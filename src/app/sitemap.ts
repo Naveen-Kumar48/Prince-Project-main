@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next"
-import { products, blogs, categoryTiles } from "@/lib/data"
+import { products, blogs, categoryTiles, cities } from "@/lib/data"
 
 export const revalidate = 86400 // Cache sitemap for 24 hours
 
@@ -18,10 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "daily" as const
   }))
 
-  const cityRoutes = [
-    "/ellenabad", "/sirsa", "/rania", "/dabwali", "/hanumangarh"
-  ].map(c => ({
-    url: `${base}${c}`,
+  const cityRoutes = (cities || []).map(c => ({
+    url: `${base}/${c.slug}`,
     lastModified: new Date(),
     priority: 0.95,
     changeFrequency: "daily" as const

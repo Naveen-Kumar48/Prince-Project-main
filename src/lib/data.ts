@@ -105,6 +105,11 @@ export const cities = [
   { slug: "rania", name: "Rania", distance: "12 km", desc: "Trusted family fashion destination near Rania." },
   { slug: "dabwali", name: "Dabwali", distance: "35 km", desc: "Affordable readymade garments for Dabwali shoppers." },
   { slug: "hanumangarh", name: "Hanumangarh", distance: "60 km", desc: "Wedding & festival collection loved by Hanumangarh families." },
+  { slug: "nathusari-chopta", name: "Nathusari Chopta", distance: "18 km", desc: "Popular fashion choice for families across Nathusari Chopta." },
+  { slug: "jiwan-nagar", name: "Jiwan Nagar", distance: "20 km", desc: "Quality family garments for shoppers in and around Jiwan Nagar." },
+  { slug: "kalanwali", name: "Kalanwali", distance: "45 km", desc: "Top clothing shop preferred by Kalanwali residents." },
+  { slug: "tibbi", name: "Tibbi", distance: "30 km", desc: "Trending fashion store for customers coming from Tibbi Rajasthan." },
+  { slug: "rawatsar", name: "Rawatsar", distance: "50 km", desc: "Fashion and festival wear destination near Rawatsar." },
 ]
 
 export const products: Product[] = [
