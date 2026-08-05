@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🛍️ Ajay Readymade Store — Family Fashion Web Portal
+# 🛍️ Ajay Readymade Store
 
-A high-performance, modern, and localized SEO-optimized digital catalog and lead-generation portal built for **Ajay Readymade Store**, Ellenabad's flagship destination for Men's Wear, Women's Wear, and Kids' Wear.
+A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** in Ellenabad — designed to showcase stylish men’s, women’s, and kids’ fashion while helping customers discover products, ask inquiries, and visit the store with ease.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
