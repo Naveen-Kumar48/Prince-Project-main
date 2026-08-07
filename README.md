@@ -154,7 +154,7 @@ Database operations are powered by **PostgreSQL** and managed using **Drizzle OR
 7. **`subscribers`** — Newsletter subscription list.
 8. **`hero_banners`** — Promotional homepage sliders and active hero banners.
 
----
+----------------------------------------------------------------------
 
 ## 🚀 Getting Started
 
