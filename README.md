@@ -138,7 +138,7 @@ ajay-readymade-website-development/
 │       └── utils.ts          # Utility functions (`clsx` + `tailwind-merge`)
 ```
 
----
+---------------------------------------------
 
 ## 🗄 Database Architecture
 
@@ -169,7 +169,7 @@ Follow these steps to set up the project locally.
 Create a `.env` file in the root directory:
 
 ```env
-DATABASE_URL="postgresql://postgres:password@localhost:5432/ajay_store_db"
+DATABASE_URL=""
 ```
 
 ### 3. Installation
@@ -199,7 +199,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
--------------------------------------------------------------------------------------------------------------
+------------
 
 ## 📜 Available Scripts
 
