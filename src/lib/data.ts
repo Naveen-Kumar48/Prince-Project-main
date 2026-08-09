@@ -98,7 +98,6 @@ export const store = {
   fullAddress: "Gurudwara Road, Near Singla Hospital, Ellenabad, Sirsa, Haryana 125102",
 }
 
-// City landing page data for local SEO expansion
 export const cities = [
   { slug: "ellenabad", name: "Ellenabad", distance: "Main Store", desc: "Our flagship store on Gurudwara Road, Near Singla Hospital." },
   { slug: "sirsa", name: "Sirsa", distance: "25 km", desc: "Serving Sirsa families with premium Men's, Women's & Kids Wear." },
@@ -110,7 +109,17 @@ export const cities = [
   { slug: "kalanwali", name: "Kalanwali", distance: "45 km", desc: "Top clothing shop preferred by Kalanwali residents." },
   { slug: "tibbi", name: "Tibbi", distance: "30 km", desc: "Trending fashion store for customers coming from Tibbi Rajasthan." },
   { slug: "rawatsar", name: "Rawatsar", distance: "50 km", desc: "Fashion and festival wear destination near Rawatsar." },
+  { slug: "bhadra", name: "Bhadra", distance: "40 km", desc: "Preferred clothing store for families visiting Ellenabad from Bhadra Rajasthan." },
+  { slug: "nohar", name: "Nohar", distance: "45 km", desc: "Top choice for readymade garments for Nohar shoppers." },
+  { slug: "sangaria", name: "Sangaria", distance: "55 km", desc: "Family fashion and festival wear destination near Sangaria." },
+  { slug: "mallekan", name: "Mallekan", distance: "8 km", desc: "Closest garment store for Mallekan village families." },
+  { slug: "jamal", name: "Jamal", distance: "14 km", desc: "Trending men's, women's & kids wear store near Jamal." },
+  { slug: "madosinghana", name: "Madosinghana", distance: "15 km", desc: "Popular fashion destination serving Madosinghana residents." },
+  { slug: "talwara-khurd", name: "Talwara Khurd", distance: "6 km", desc: "Nearest readymade clothes shop for Talwara Khurd residents." },
+  { slug: "pohraka", name: "Pohraka", distance: "10 km", desc: "Top-rated family clothing store for Pohraka shoppers." },
+  { slug: "kuttabadh", name: "Kuttabadh", distance: "12 km", desc: "Quality family fashion destination serving Kuttabadh." },
 ]
+
 
 export const products: Product[] = [
   {
