@@ -61,8 +61,7 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 | **Icons** | Lucide React | Clean, responsive vector icons |
 | **Utilities** | `clsx` + `tailwind-merge` | Conditional and merged dynamic class combinations |
 
-------------------------------------
-
+---
 ## ✨ Key Features
 
 - 🌐 **Localized Multi-City SEO Pages:** Dynamic dynamic route templates (`/src/app/[city]/page.tsx`) specifically targeting regional search traffic in **Ellenabad**, **Sirsa**, **Rania**, **Dabwali**, and **Hanumangarh**.
@@ -138,7 +137,7 @@ ajay-readymade-website-development/
 │       └── utils.ts          # Utility functions (`clsx` + `tailwind-merge`)
 ```
 
----------------------------------------------
+---
 
 ## 🗄 Database Architecture
 
@@ -154,7 +153,7 @@ Database operations are powered by **PostgreSQL** and managed using **Drizzle OR
 7. **`subscribers`** — Newsletter subscription list.
 8. **`hero_banners`** — Promotional homepage sliders and active hero banners.
 
-----------------------------------------------------------------------------------------------------
+-----
 
 ## 🚀 Getting Started
 
