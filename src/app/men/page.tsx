@@ -5,6 +5,9 @@ import Link from "next/link"
 export const metadata = {
   title: "Men's Wear in Ellenabad – Formal Shirts, Jeans, Cargo, Blazers | Ajay Readymade",
   description: "Ellenabad's largest Men's Wear collection (45% focus). Formal shirts, t-shirts, jeans, cargo pants, blazers, kurta pajama. 245+ products. Visit Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Sirsa, Rania, Dabwali delivery.",
+  alternates: {
+    canonical: "/men",
+  },
 }
 
 export default function MenPage() {

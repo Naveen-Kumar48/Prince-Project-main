@@ -1,6 +1,15 @@
 import { blogs } from "@/lib/data"
 import { notFound } from "next/navigation"
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }){ const { slug } = await params; const b = blogs.find(x=>x.slug===slug); return { title: b ? `${b.title} | Ajay Readymade Ellenabad Blog` : "Blog not found" } }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }){
+  const { slug } = await params;
+  const b = blogs.find(x=>x.slug===slug);
+  return {
+    title: b ? `${b.title} | Ajay Readymade Ellenabad Blog` : "Blog not found",
+    alternates: {
+      canonical: `/blogs/${slug}`,
+    },
+  };
+}
 export default async function Page({ params }: { params: Promise<{ slug: string }> }){
   const { slug } = await params
   const b = blogs.find(x=>x.slug===slug)

@@ -1,6 +1,11 @@
 import { blogs } from "@/lib/data"
 import Link from "next/link"
-export const metadata = { title: "Fashion Blog – Style Tips for Ellenabad Families | Ajay Readymade" }
+export const metadata = {
+  title: "Fashion Blog – Style Tips for Ellenabad Families | Ajay Readymade",
+  alternates: {
+    canonical: "/blogs",
+  },
+}
 export default function Page(){
   return (
     <div className="max-w-[1440px] mx-auto px-6 lg:px-8 py-10">

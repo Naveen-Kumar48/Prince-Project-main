@@ -1,6 +1,11 @@
 import { getMediaItems } from "@/lib/db-helper"
 
-export const metadata = { title: "About Ajay Readymade Store – Since 1998, Ellenabad's Family Fashion" }
+export const metadata = {
+  title: "About Ajay Readymade Store – Since 1998, Ellenabad's Family Fashion",
+  alternates: {
+    canonical: "/about",
+  },
+}
 
 export default async function AboutPage() {
   const media = await getMediaItems()

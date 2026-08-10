@@ -4,7 +4,10 @@ import Link from "next/link"
 
 export const metadata = {
   title: "Women's Wear in Ellenabad – Kurti, Palazzo, Ethnic | Ajay Readymade",
-  description: "Curated Women's Wear in Ellenabad (20% focus). Kurti, kurti sets, leggings, palazzo, ethnic festival wear. Premium festive collection for Ellenabad, Sirsa, Rania families.",
+  description: "Curated Women's Wear in Ellenabad (20% focus). Kurti, kurti sets, leggings, palazzo, ethnic festive wear. Premium festive collection for Ellenabad, Sirsa, Rania families.",
+  alternates: {
+    canonical: "/women",
+  },
 }
 
 export default function WomenPage() {

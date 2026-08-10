@@ -1,6 +1,11 @@
 import { ContactForm } from "@/components/contact-form"
 
-export const metadata = { title: "Contact Ajay Readymade Store – Location, Phone, Hours | Ellenabad" }
+export const metadata = {
+  title: "Contact Ajay Readymade Store – Location, Phone, Hours | Ellenabad",
+  alternates: {
+    canonical: "/contact",
+  },
+}
 
 export default function ContactPage() {
   return (

@@ -5,6 +5,9 @@ import Link from "next/link"
 export const metadata = {
   title: "Kids Wear in Ellenabad – Frocks, School Dress, Party Wear | Ajay Readymade",
   description: "Best Kids Wear in Ellenabad (35% focus). Frocks, dresses, school uniforms, baby wear, winter hoodies, ethnic wear. 180+ products. Trusted by 500 families in Ellenabad, Sirsa, Rania.",
+  alternates: {
+    canonical: "/kids",
+  },
 }
 
 export default function KidsPage() {

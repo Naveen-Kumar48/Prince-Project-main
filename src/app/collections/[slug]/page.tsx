@@ -1,5 +1,24 @@
 import { products } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const titleMap: any = { 
+    wedding: "Wedding Collection – Blazers, Kurtas, Lehengas for Ellenabad Weddings", 
+    festival: "Festival Edit – Diwali, Eid, Navratri Specials", 
+    school: "School Essentials – Uniforms Trusted by 500 Families", 
+    winter: "Winter Warmers – Hoodies & Jackets for North India Winters", 
+    summer: "Summer Collection – Cool Cottons for Ellenabad Heat" 
+  }
+  return {
+    title: `${titleMap[slug] || `${slug} Collection`} | Ajay Readymade Store`,
+    description: `Browse the ${slug} collection at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Quality fabrics, affordable prices, and latest designs.`,
+    alternates: {
+      canonical: `/collections/${slug}`,
+    },
+  }
+}
+
 export default async function Page({ params }: { params: Promise<{ slug: string }> }){
   const { slug } = await params
   const filtered = products.filter(p=>p.collectionType.includes(slug))

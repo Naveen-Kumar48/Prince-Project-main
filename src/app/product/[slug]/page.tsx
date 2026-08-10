@@ -13,6 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${p.name} – ${p.category} | Ajay Readymade Store Ellenabad`,
     description: `${p.description} Price ${formatINR(p.price)}. Available at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Try in-store, same-day alteration. Serving Sirsa, Rania, Dabwali.`,
+    alternates: {
+      canonical: `/product/${slug}`,
+    },
   }
 }
 

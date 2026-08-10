@@ -1,4 +1,9 @@
-export const metadata = { title: "Offers – Flat 30% Wedding Season | Ajay Readymade Ellenabad" }
+export const metadata = {
+  title: "Offers – Flat 30% Wedding Season | Ajay Readymade Ellenabad",
+  alternates: {
+    canonical: "/offers",
+  },
+}
 export default function Page(){
   return (
     <div className="max-w-[1440px] mx-auto px-6 lg:px-8 py-10">
