@@ -15,7 +15,7 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 
 </div>
 
-------
+------------------------------------------------------------------------------------------------------------
 
 ## 📖 Table of Contents
 
@@ -72,7 +72,7 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 - 🗺️ **Interactive Store Finder:** Embedded Google Map navigation directing shoppers straight to the flagship store on Gurudwara Road.
 - 📑 **Dynamic Sitemap & Robots Generator:** Automated `sitemap.ts` and `robots.ts` ensuring immediate indexing by search engine crawlers.
 
----
+--------------------------------------------------
 
 ## 📈 Local SEO Strategy
 
