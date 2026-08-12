@@ -1,10 +1,18 @@
 import { products } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 export const metadata = {
-  title: "New Arrivals – Winter & Wedding 2025 | Ajay Readymade Ellenabad",
+  title: "New Arrivals – Winter & Wedding Collection | Ajay Readymade Ellenabad",
+  description: "Explore new arrivals at Ajay Readymade Store Ellenabad. Fresh weekly arrivals in formal shirts, denim jeans, kids frocks, school wear & wedding collection.",
   alternates: {
     canonical: "/new-arrivals",
   },
+  keywords: [
+    "New arrivals fashion Ellenabad",
+    "Latest stock clothing store Ellenabad",
+    "New collection clothes Sirsa district",
+    "Fresh arrivals readymade shop Ellenabad",
+    "New festival wear Ellenabad",
+  ],
 }
 export default function Page() {
   const tr = products.filter(p=>p.isNewArrival)

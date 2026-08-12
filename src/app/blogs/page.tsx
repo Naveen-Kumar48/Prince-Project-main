@@ -2,9 +2,17 @@ import { blogs } from "@/lib/data"
 import Link from "next/link"
 export const metadata = {
   title: "Fashion Blog – Style Tips for Ellenabad Families | Ajay Readymade",
+  description: "Read fashion advice, clothing care tips & wedding style guides for men, women & kids in Ellenabad, Sirsa, Rania from Ajay Readymade Store.",
   alternates: {
     canonical: "/blogs",
   },
+  keywords: [
+    "Fashion blog Ellenabad",
+    "Style tips men women kids Ellenabad",
+    "Wedding dress guide Ellenabad",
+    "Clothing care tips Haryana",
+    "Ajay Readymade style journal",
+  ],
 }
 export default function Page(){
   return (

@@ -1,8 +1,15 @@
 export const metadata = {
   title: "Store Gallery – Inside Ajay Readymade Ellenabad",
+  description: "Take a visual tour inside Ajay Readymade Store on Gurudwara Road, Near Singla Hospital, Ellenabad. Explore our Men's, Women's & Kids wear sections.",
   alternates: {
     canonical: "/gallery",
   },
+  keywords: [
+    "Ajay Readymade store photos",
+    "Clothing store interior Ellenabad",
+    "Garments shop Gurudwara Road photo gallery",
+    "Ajay Kapda store pictures Ellenabad",
+  ],
 }
 export default function Page(){
   const imgs = Array.from({ length: 12 }).map((_,i)=>`https://images.unsplash.com/photo-${["1441986300917-64674bd600d8","1490481651871-ab68de25d43d","1489987707025-afc232f7ea0f","1567401893414-76b7b1e5a7a5"][i%4]}?w=600&q=80`)

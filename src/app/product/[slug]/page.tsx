@@ -16,6 +16,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `/product/${slug}`,
     },
+    keywords: [
+      p.name,
+      `${p.name} Ellenabad`,
+      `${p.category} Ellenabad`,
+      `${p.brand} ${p.category}`,
+      `buy ${p.name} online Ellenabad`,
+      `${p.gender}'s clothing store Ellenabad`,
+      "Ajay Readymade Store",
+      "Gurudwara Road garments shop",
+    ],
   }
 }
 

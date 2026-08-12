@@ -2,9 +2,17 @@ import { products } from "@/lib/data"
 import { ProductCard } from "@/components/product-card"
 export const metadata = {
   title: "Trending Now in Ellenabad & Sirsa | Ajay Readymade",
+  description: "Discover the most popular & trending fashion items this week at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Top choices for Men, Women & Kids.",
   alternates: {
     canonical: "/trending",
   },
+  keywords: [
+    "Trending clothes Ellenabad",
+    "Latest fashion trends Sirsa Ellenabad",
+    "Popular men's clothing Ellenabad",
+    "Best selling kids wear Ellenabad",
+    "Top rated fashion items Ellenabad",
+  ],
 }
 export default function Page() {
   const tr = products.filter(p=>p.isTrending)

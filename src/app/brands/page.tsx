@@ -5,6 +5,14 @@ export const metadata = {
   alternates: {
     canonical: "/brands",
   },
+  keywords: [
+    "Branded clothes Ellenabad",
+    "Top clothing brands Ellenabad",
+    "Branded readymade garments Sirsa",
+    "Raymond Cotton shirts Ellenabad",
+    "Allen Solly style menswear Ellenabad",
+    "Peter England casual wear Ellenabad",
+  ],
 }
 
 export default function Page(){
