@@ -8,6 +8,19 @@ export const metadata = {
   alternates: {
     canonical: "/women",
   },
+  keywords: [
+    "Women's Wear Ellenabad",
+    "Ladies kurti shop Ellenabad",
+    "Ladies suit dukan Ellenabad",
+    "Designer kurti set Ellenabad",
+    "Palazzo suit set Ellenabad",
+    "Women ethnic festive wear Ellenabad",
+    "Fancy lehenga choli shop Ellenabad",
+    "Ladies winter sweater cardigan Ellenabad",
+    "Cotton kurti shop Gurudwara Road Ellenabad",
+    "Ladies clothing store near Singla Hospital",
+    "Women's wear shop near me Sirsa Rania",
+  ],
 }
 
 export default function WomenPage() {

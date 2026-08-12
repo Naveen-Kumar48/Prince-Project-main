@@ -8,6 +8,23 @@ export const metadata = {
   alternates: {
     canonical: "/men",
   },
+  keywords: [
+    "Men's Wear Ellenabad",
+    "Men's clothing store Ellenabad",
+    "Gents kapde ki dukan Ellenabad",
+    "Formal shirts for men Ellenabad",
+    "Casual cotton shirts men Ellenabad",
+    "Men's jeans shop Ellenabad",
+    "Stretchable cargo pants men",
+    "Blazer coat pant shop Ellenabad",
+    "Groom wedding sherwani kurta Ellenabad",
+    "Men's polo t-shirts Ellenabad",
+    "Men's winter jacket sweater Ellenabad",
+    "Tracksuit for men Ellenabad",
+    "Ajay Readymade Men's Collection",
+    "Best gents clothing store Near Singla Hospital Ellenabad",
+    "Men's wear shop near me Sirsa Rania Dabwali",
+  ],
 }
 
 export default function MenPage() {

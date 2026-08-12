@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     "Ajay Readymade Store Gurudwara Road",
     "Ajay Readymade Store Ellenabad Haryana",
     "Ajay fashion store Ellenabad",
+    "Ajay Garments Shop Ellenabad",
+    "Ajay Kapda Store Ellenabad",
+    "Ajay Readymade store contact number",
+    "Ajay Readymade store address Ellenabad",
+    "Ajay Readymade Store Sirsa district",
 
     // ── Near-Me High-Intent Keywords ────────────────────────
     "best fashion shop near me",
@@ -56,6 +61,10 @@ export const metadata: Metadata = {
     "branded clothes shop near me",
     "affordable clothes shop near me",
     "top-rated clothing store near me",
+    "gents dress shop near me",
+    "ladies suit shop near me",
+    "kids frock shop near me",
+    "wedding coat pant shop near me",
 
     // ── Ellenabad Local & Landmark Keywords ─────────────────
     "best fashion shop in Ellenabad",
@@ -117,6 +126,37 @@ export const metadata: Metadata = {
     "cargo pants shop Ellenabad",
     "lehenga choli shop Ellenabad",
 
+    // ── Men's Wear Garment Specific Keywords ──────────────────
+    "men formal shirts Ellenabad",
+    "men casual linen shirts Ellenabad",
+    "cotton printed shirts for men Ellenabad",
+    "slim fit denim jeans for men",
+    "stretchable cargo pants men Ellenabad",
+    "men party wear blazer coat pant Ellenabad",
+    "wedding kurta pajama set men Ellenabad",
+    "men polo t-shirts oversized tees Ellenabad",
+    "men winter jacket puffer jacket Ellenabad",
+    "gents woolen sweater cardigan Ellenabad",
+    "men tracksuit gymwear Ellenabad",
+
+    // ── Women's Wear Garment Specific Keywords ────────────────
+    "ladies designer kurti set Ellenabad",
+    "cotton kurti palazzo suit Ellenabad",
+    "women ethnic festival dresses Ellenabad",
+    "ladies fancy lehenga partywear Ellenabad",
+    "women winter jacket cardigan Ellenabad",
+    "ladies woolen kurti suit Ellenabad",
+    "girls fancy dresses Ellenabad",
+
+    // ── Kids Wear & School Uniform Specific Keywords ──────────
+    "kids school dress uniform Ellenabad",
+    "school white shirt khaki trousers Ellenabad",
+    "kids birthday dress partywear Ellenabad",
+    "baby boy shirt pant set Ellenabad",
+    "girls fancy party frock Ellenabad",
+    "kids winter hoodie jacket sweater Ellenabad",
+    "newborn baby soft clothing Ellenabad",
+
     // ── Ellenabad Tehsil & Village Keywords ─────────────────
     "best fashion shop Nathusari Chopta",
     "clothing store Chopta Sirsa",
@@ -131,6 +171,10 @@ export const metadata: Metadata = {
     "clothing store Mithanpura",
     "readymade garments Ding Sirsa",
     "clothing shop Khairpur Sirsa",
+    "readymade store Madosinghana",
+    "clothing store Dhani Majra",
+    "kapda shop Kashi Ka Bass",
+    "garments shop Mojdin Khera",
 
     // ── Haryana & Regional Keywords ─────────────────────────
     "best clothing store in Sirsa district Haryana",
@@ -168,6 +212,7 @@ export const metadata: Metadata = {
     "cheap clothes near Sirsa",
     "branded clothing near Dabwali",
     "family clothing near Hanumangarh",
+    "Bhadra Rajasthan readymade garments",
 
     // ── Vernacular & Hindi Search Intent Keywords ────────────
     "kapde ki dukan Ellenabad",
@@ -181,6 +226,11 @@ export const metadata: Metadata = {
     "school dress uniform dukan Ellenabad",
     "ladies suit kurti dukan Ellenabad",
     "kids kapde ki dukan Ellenabad",
+    "sabse achhi kapde ki dukan Ellenabad Gurudwara Road",
+    "shadi ke coat pant ki dukan Ellenabad",
+    "gents suit kapda dukan Ellenabad",
+    "bhai ki shadi dress dukan Ellenabad",
+    "bachon ke saste kapde dukan Ellenabad",
 
     // ── Category + Location Keywords ─────────────────────────
     "Men's Wear Shop Ellenabad",
@@ -216,6 +266,8 @@ export const metadata: Metadata = {
     "low price readymade garments Ellenabad",
     "clothes under 500 Ellenabad",
     "clothes under 1000 Ellenabad",
+    "clothes under 2000 Ellenabad",
+    "wholesale price clothing Ellenabad",
 
     // ── WhatsApp & Online Order Intent ───────────────────────
     "order clothes on WhatsApp Ellenabad",
@@ -224,6 +276,7 @@ export const metadata: Metadata = {
     "clothes delivery near Sirsa",
     "WhatsApp fashion shop Ellenabad",
     "online readymade shop Ellenabad",
+    "Ajay readymade store contact number Ellenabad",
 
     // ── Additional Hyper-Local & Micro-Location Keywords ──────
     "Gurudwara Road Ellenabad kapde ki dukan",
@@ -238,24 +291,6 @@ export const metadata: Metadata = {
     "Civil Hospital Road Ellenabad clothing",
     "Hanumangarh Road Ellenabad garments",
     "Sirsa Bypass Road readymade store Ellenabad",
-
-    // ── Nearby Towns & Rajasthan Border Locations ─────────────
-    "Bhadra Rajasthan readymade garments",
-    "Nohar Rajasthan clothes shop",
-    "Sangaria Rajasthan fashion store",
-    "Mallekan village clothes shop Ellenabad",
-    "Jamal Sirsa clothing store",
-    "Madosinghana family fashion shop",
-    "Talwara Khurd readymade shop",
-    "Talwara Kalan garments store",
-    "Pohraka village clothing shop",
-    "Kuttabadh family garment store",
-    "Mithanpura clothing store Ellenabad",
-    "Santoshnagar readymade store",
-    "Dhani Majra clothing shop",
-    "Kashi Ka Bass kapde ki dukan",
-    "Mojdin Khera garments shop",
-    "Nimla village fashion shop",
 
     // ── Vernacular High-Intent Local Searches ─────────────────
     "Ellenabad me sabse saste kapde kahan milte hain",
