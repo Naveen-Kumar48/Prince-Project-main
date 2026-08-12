@@ -1,8 +1,17 @@
 export const metadata = {
   title: "Offers – Flat 30% Wedding Season | Ajay Readymade Ellenabad",
+  description: "Exclusive clothing discounts & sale offers at Ajay Readymade Store Ellenabad. Wedding season 30% off, kids school packs, men's jeans combos & festival discounts.",
   alternates: {
     canonical: "/offers",
   },
+  keywords: [
+    "Clothing offers Ellenabad",
+    "Readymade garments sale Ellenabad",
+    "Wedding clothes offer Ellenabad",
+    "Saste kapde offer Ellenabad",
+    "Discount fashion shop Ellenabad",
+    "Ajay Readymade special sale",
+  ],
 }
 export default function Page(){
   return (
