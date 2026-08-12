@@ -8,6 +8,19 @@ export const metadata = {
   alternates: {
     canonical: "/kids",
   },
+  keywords: [
+    "Kids Wear Ellenabad",
+    "Kids clothing store near me Ellenabad",
+    "Bachon ke kapde dukan Ellenabad",
+    "Kids school dress uniform Ellenabad",
+    "Girls fancy party frock Ellenabad",
+    "Boys t-shirt jeans shop Ellenabad",
+    "Baby dress clothing shop Ellenabad",
+    "Kids winter hoodie jacket Ellenabad",
+    "Kids ethnic wedding wear Ellenabad",
+    "Best kids store Gurudwara Road Ellenabad",
+    "School uniform shop near Singla Hospital",
+  ],
 }
 
 export default function KidsPage() {

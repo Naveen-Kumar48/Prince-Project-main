@@ -2,9 +2,18 @@ import { getMediaItems } from "@/lib/db-helper"
 
 export const metadata = {
   title: "About Ajay Readymade Store – Since 1998, Ellenabad's Family Fashion",
+  description: "Learn about Ajay Readymade Store, Ellenabad's premier family fashion destination since 1998. Men's wear, Kids wear & Women's wear on Gurudwara Road, Near Singla Hospital.",
   alternates: {
     canonical: "/about",
   },
+  keywords: [
+    "About Ajay Readymade Store",
+    "Best readymade store history Ellenabad",
+    "Clothing store Gurudwara Road Ellenabad",
+    "Family fashion shop since 1998 Ellenabad",
+    "Ajay Kapda store Sirsa Haryana",
+    "Top rated garments store Ellenabad",
+  ],
 }
 
 export default async function AboutPage() {

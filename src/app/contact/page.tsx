@@ -2,9 +2,19 @@ import { ContactForm } from "@/components/contact-form"
 
 export const metadata = {
   title: "Contact Ajay Readymade Store – Location, Phone, Hours | Ellenabad",
+  description: "Find location, store hours, Google map directions & contact number (+91 95968-85527) for Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad, Sirsa, Haryana.",
   alternates: {
     canonical: "/contact",
   },
+  keywords: [
+    "Ajay Readymade store address",
+    "Ajay Readymade contact number",
+    "Ajay Readymade store location Gurudwara Road Ellenabad",
+    "Clothing store phone number Ellenabad",
+    "Garments shop near Singla Hospital Ellenabad",
+    "Ajay readymade store WhatsApp number",
+    "Ellenabad kapde ki dukan phone number",
+  ],
 }
 
 export default function ContactPage() {
