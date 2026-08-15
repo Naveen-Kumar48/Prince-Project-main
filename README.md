@@ -64,7 +64,7 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 ---
 ## ✨ Key Features
 
-- 🌐 **Localized Multi-City SEO Pages:** Dynamic dynamic route templates (`/src/app/[city]/page.tsx`) specifically targeting regional search traffic in **Ellenabad**, **Sirsa**, **Rania**, **Dabwali**, and **Hanumangarh**.
+- 🌐 **Localized Multi-City SEO Pages:** Dynamic routing template (`/src/app/[city]/page.tsx`) generating over **45+ localized landing pages** specifically targeting search queries for villages and towns in Sirsa (Haryana) and Hanumangarh (Rajasthan) districts.
 - 🏷️ **Rich Structured Data (JSON-LD):** Built-in Google Rich Snippets integration including `ClothingStore`, `WebSite`, and `BreadcrumbList` schemas.
 - 💬 **Direct WhatsApp Inquiry Pipeline:** Floating multi-channel action buttons with pre-configured messages for instant customer support and lead closing.
 - 📥 **B2C Customer Lead Capture:** Built-in inquiry form saving product-level leads directly into the PostgreSQL database.
@@ -76,13 +76,16 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 
 ## 📈 Local SEO Strategy
 
-To dominate local search results within a 60km radius of the flagship store, the application leverages dynamic regional routing (`/[city]`) backed by location-specific datasets (`src/lib/data.ts`):
+To dominate local search results within a 60km radius of the flagship store, the application leverages dynamic regional routing (`/[city]`) backed by location-specific datasets (`src/lib/data.ts`). This is optimized to capture high-intent local search queries like *"kapde ki dukan near me"*, *"readymade garments in [city]"*, or *"clothing store near [city]"*.
 
-* 📍 **Ellenabad** — Flagship Store Location (Gurudwara Road, Near Singla Hospital)
-* 📍 **Sirsa** — Regional Hub (25 km radius)
-* 📍 **Rania** — Nearby Market (12 km radius)
-* 📍 **Dabwali** — Extended Coverage (35 km radius)
-* 📍 **Hanumangarh** — Inter-state Connectivity (60 km radius)
+### Target Locations Covered:
+* 📍 **Core Hubs:** Ellenabad (Flagship Store), Sirsa, Rania, Dabwali, Hanumangarh.
+* 📍 **Surrounding Towns & Villages (40+ locations):** Nathusari Chopta, Jiwan Nagar, Kalanwali, Tibbi, Rawatsar, Bhadra, Nohar, Sangaria, Mallekan, Jamal, Madhosinghana, Talwara Khurd, Pohraka, Kuttabadh, Chautala, Odhan, Goriwala, Ding, Chaharwala, Khuiyan Malkana, Kariwala, Loolgarh, Sherpura, Phoolkan, Bajekan, Jodhpuria, Suchan Kotli, Vaidwala, Sikandarpur, Kangpur, Ottu, Kharian, Musahibwala, Nathusari Kalan, Kashi Ka Bass, Mojdin Khera, Dhani Majra, Santoshnagar, Mithanpura, Khairpur, and more.
+
+### Search Intent Mapping:
+- **School Uniforms:** Optimized to capture local school queries (*DAV school uniform Ellenabad, SRS school uniform, Nachiketan school uniform*).
+- **Brands & Quality:** Captures searches for popular regional clothing brands (*Sparky jeans Ellenabad, Mufti shirts, Raymond suiting, Peter England casuals*).
+- **Vernacular Queries:** SEO optimized for Hindi-English hybrid searches (*"saste kapde ki dukan Ellenabad", "dulhe ke kapde", "wedding coat pant blazer shop Ellenabad"*).
 
 Each localized route auto-configures targeted metadata, open-graph tags, location badges, travel distances, and localized canonical links.
 
