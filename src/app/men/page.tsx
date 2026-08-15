@@ -24,6 +24,13 @@ export const metadata = {
     "Ajay Readymade Men's Collection",
     "Best gents clothing store Near Singla Hospital Ellenabad",
     "Men's wear shop near me Sirsa Rania Dabwali",
+    "Sparky jeans Ellenabad",
+    "Mufti shirts for men Ellenabad",
+    "Raymond clothing for men Ellenabad",
+    "Peter England shirts showroom Ellenabad",
+    "Killer jeans showroom Ellenabad",
+    "Gents wedding coat pant shop Ellenabad",
+    "Branded gents clothes Ellenabad",
   ],
 }
 

@@ -20,6 +20,12 @@ export const metadata = {
     "Cotton kurti shop Gurudwara Road Ellenabad",
     "Ladies clothing store near Singla Hospital",
     "Women's wear shop near me Sirsa Rania",
+    "Bridal lehenga in Ellenabad",
+    "Ladies cotton suit stitching Ellenabad",
+    "Fancy kurti palazzo set Ellenabad",
+    "Ladies designer kurti shop Gurudwara Road Ellenabad",
+    "Women's boutique in Ellenabad",
+    "Girls and ladies dress shop near me",
   ],
 }
 

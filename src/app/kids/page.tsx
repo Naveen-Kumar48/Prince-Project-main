@@ -20,6 +20,12 @@ export const metadata = {
     "Kids ethnic wedding wear Ellenabad",
     "Best kids store Gurudwara Road Ellenabad",
     "School uniform shop near Singla Hospital",
+    "DAV school uniform Ellenabad",
+    "SRS school uniform Ellenabad",
+    "Nachiketan school uniform Ellenabad",
+    "Nivedita school dress Ellenabad",
+    "Government school dress dukan Ellenabad",
+    "Kids school uniform store Sirsa Haryana",
   ],
 }
 
