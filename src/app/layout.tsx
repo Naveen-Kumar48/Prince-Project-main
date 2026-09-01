@@ -18,15 +18,19 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://ajayreadymade.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ajayreadymade.com";
+const defaultTitle = "Ajay Readymade Store | Best Men's, Women's & Kids Wear in Ellenabad";
+const defaultDescription = "Shop the latest Men's, Women's & Kids Wear at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Affordable prices, quality products & new arrivals every week.";
+const socialImageUrl = new URL("/og-image.jpg", siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "Ajay Readymade Store",
   title: {
-    default: "Ajay Readymade Store | Best Men's, Women's & Kids Wear in Ellenabad",
+    default: defaultTitle,
     template: "%s | Ajay Readymade Store Ellenabad",
   },
-  description: "Shop the latest Men's, Women's & Kids Wear at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Affordable prices, quality products & new arrivals every week.",
+  description: defaultDescription,
   keywords: [
     // ── Brand & Store Identity ──────────────────────────────
     "Ajay Readymade Store",
@@ -355,6 +359,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Ajay Readymade Store" }],
   creator: "Ajay Readymade Store",
   publisher: "Ajay Readymade Store",
+  category: "shopping",
   formatDetection: { email: false, address: false, telephone: false },
   alternates: { canonical: "/" },
   openGraph: {
@@ -362,15 +367,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteUrl,
     siteName: "Ajay Readymade Store",
-    title: "Ajay Readymade Store | Best Men's, Women's & Kids Wear in Ellenabad",
-    description: "Shop the latest Men's, Women's & Kids Wear at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Affordable prices & new arrivals every week.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Ajay Readymade Store Ellenabad - Family Fashion" }],
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [{ url: socialImageUrl, width: 1200, height: 630, alt: "Ajay Readymade Store Ellenabad - Family Fashion" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajay Readymade Store | Men's, Women's & Kids Wear in Ellenabad",
-    description: "Latest Men's, Women's & Kids Wear at affordable prices. Gurudwara Road, Near Singla Hospital, Ellenabad.",
-    images: ["/og-image.jpg"],
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [socialImageUrl],
   },
   robots: {
     index: true,
