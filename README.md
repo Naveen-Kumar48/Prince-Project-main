@@ -34,7 +34,7 @@ A modern, responsive, and SEO-friendly web portal for **Ajay Readymade Store** i
 - [Available Scripts](#-available-scripts)
 - [Contact & Store Location](#-contact--store-location)
 
----
+--------------------------------------
 
 ## 🔍 Overview
 
