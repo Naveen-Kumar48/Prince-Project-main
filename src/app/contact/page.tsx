@@ -7,13 +7,16 @@ export const metadata = {
     canonical: "/contact",
   },
   keywords: [
-    "Ajay Readymade store address",
-    "Ajay Readymade contact number",
-    "Ajay Readymade store location Gurudwara Road Ellenabad",
-    "Clothing store phone number Ellenabad",
-    "Garments shop near Singla Hospital Ellenabad",
+    "best cloth shop in Ellenabad 125102",
+    "cloth shop address Ellenabad Haryana 125102",
+    "Ajay Readymade store address 125102",
+    "Ajay Readymade contact number Ellenabad",
+    "Ajay Readymade store location Gurudwara Road Ellenabad 125102",
+    "Clothing store phone number Ellenabad 125102",
+    "Garments shop near Singla Hospital Ellenabad 125102",
+    "readymade cloth store Gurudwara Road 125102",
     "Ajay readymade store WhatsApp number",
-    "Ellenabad kapde ki dukan phone number",
+    "Ellenabad kapde ki dukan phone number 125102",
   ],
 }
 

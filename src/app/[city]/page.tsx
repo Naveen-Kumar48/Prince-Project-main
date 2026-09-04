@@ -19,10 +19,12 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     alternates: { canonical: `/${c.slug}` },
     keywords: [
       // Near-me intent for this city
-      `best fashion shop near ${c.name}`,
+      `best cloth shop near ${c.name}`,
+      `best cloth shop in Ellenabad 125102 near ${c.name}`,
+      `best cloth store near ${c.name}`,
       `fashion shop near me ${c.name}`,
       `clothing store near ${c.name}`,
-      `readymade shop near ${c.name}`,
+      `readymade cloth shop near ${c.name}`,
       `garments shop near ${c.name}`,
       `best clothing store near ${c.name}`,
       `nearest readymade store from ${c.name}`,
@@ -38,6 +40,8 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       `wedding coat pant blazer shop ${c.name}`,
       `school dress uniform shop near ${c.name}`,
       // City-specific
+      `Cloth Shop in ${c.name}`,
+      `Cloth Store in ${c.name}`,
       `Clothing Store in ${c.name}`,
       `Readymade Store in ${c.name}`,
       `Men's Wear in ${c.name}`,
@@ -51,9 +55,10 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
       `wedding collection near ${c.name}`,
       `festival shopping near ${c.name}`,
       // Ellenabad destination & location linkage
+      `best cloth shop in Ellenabad 125102 serving ${c.name}`,
       `Readymade Store Ellenabad near ${c.name}`,
       `best clothing shop Ellenabad serving ${c.name}`,
-      `garments shop Gurudwara Road Ellenabad serving ${c.name}`,
+      `garments shop Gurudwara Road Ellenabad 125102 serving ${c.name}`,
     ],
   };
 }
