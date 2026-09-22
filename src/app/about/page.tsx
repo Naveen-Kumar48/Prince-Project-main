@@ -1,8 +1,8 @@
 import { getMediaItems } from "@/lib/db-helper"
 
 export const metadata = {
-  title: "About Ajay Readymade Store – Since 1998, Ellenabad's Family Fashion",
-  description: "Learn about Ajay Readymade Store, Ellenabad's premier family fashion destination since 1998. Men's wear, Kids wear & Women's wear on Gurudwara Road, Near Singla Hospital.",
+  title: "About Our Family Fashion Store",
+  description: "Discover Ajay Readymade Store, Ellenabad's premier family fashion shop since 1998 on Gurudwara Road. Quality clothes for Men, Women & Kids.",
   alternates: {
     canonical: "/about",
   },

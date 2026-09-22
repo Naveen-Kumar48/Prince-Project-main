@@ -3,8 +3,8 @@ import { ProductCard } from "@/components/product-card"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Women's Wear in Ellenabad – Kurti, Palazzo, Ethnic | Ajay Readymade",
-  description: "Curated Women's Wear in Ellenabad (20% focus). Kurti, kurti sets, leggings, palazzo, ethnic festive wear. Premium festive collection for Ellenabad, Sirsa, Rania families.",
+  title: "Women's Kurtis & Ethnic Wear",
+  description: "Explore women's kurtis, palazzo sets & festive ethnic wear at Ajay Readymade Store, Ellenabad. Premium quality fabrics at honest prices.",
   alternates: {
     canonical: "/women",
   },

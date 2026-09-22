@@ -47,7 +47,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Shop Men • 45%</h4>
+            <h4 className="text-white font-semibold mb-4"><Link href="/men" className="hover:text-[#FFC800] transition">Shop Men • 45%</Link></h4>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="/category/mens-formal-shirts" className="hover:text-white transition">Formal Shirts</Link></li>
               <li><Link href="/category/mens-tshirts" className="hover:text-white transition">T-Shirts & Polos</Link></li>
@@ -60,7 +60,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Kids Wear • 35%</h4>
+            <h4 className="text-white font-semibold mb-4"><Link href="/kids" className="hover:text-[#FFC800] transition">Kids Wear • 35%</Link></h4>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="/category/baby-wear" className="hover:text-white transition">Baby Wear (0-3Y)</Link></li>
               <li><Link href="/category/kids-school-wear" className="hover:text-white transition">School Uniforms</Link></li>
@@ -73,7 +73,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Women • 20% & More</h4>
+            <h4 className="text-white font-semibold mb-4"><Link href="/women" className="hover:text-[#FFC800] transition">Women • 20% & More</Link></h4>
             <ul className="space-y-2.5 text-sm">
               <li><Link href="/category/womens-kurti-sets" className="hover:text-white transition">Kurti & Kurti Sets</Link></li>
               <li><Link href="/category/womens-palazzo-leggings" className="hover:text-white transition">Palazzo & Leggings</Link></li>

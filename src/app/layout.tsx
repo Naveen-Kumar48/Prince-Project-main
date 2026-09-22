@@ -19,8 +19,8 @@ const inter = Inter({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ajayreadymade.com";
-const defaultTitle = "Ajay Readymade Store | Best Men's, Women's & Kids Wear in Ellenabad";
-const defaultDescription = "Shop the latest Men's, Women's & Kids Wear at Ajay Readymade Store, Gurudwara Road, Near Singla Hospital, Ellenabad. Affordable prices, quality products & new arrivals every week.";
+const defaultTitle = "Ajay Readymade Store | Clothing Store in Ellenabad";
+const defaultDescription = "Shop Men's, Women's & Kids wear at Ajay Readymade Store, Ellenabad. Quality readymade garments, wedding suits & festival clothes at best prices.";
 const socialImageUrl = new URL("/og-image.jpg", siteUrl).toString();
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   applicationName: "Ajay Readymade Store",
   title: {
     default: defaultTitle,
-    template: "%s | Ajay Readymade Store Ellenabad",
+    template: "%s | Ajay Readymade Store",
   },
   description: defaultDescription,
   keywords: [

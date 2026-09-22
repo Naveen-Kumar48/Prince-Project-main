@@ -3,8 +3,8 @@ import { ProductCard } from "@/components/product-card"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Kids Wear in Ellenabad – Frocks, School Dress, Party Wear | Ajay Readymade",
-  description: "Best Kids Wear in Ellenabad (35% focus). Frocks, dresses, school uniforms, baby wear, winter hoodies, ethnic wear. 180+ products. Trusted by 500 families in Ellenabad, Sirsa, Rania.",
+  title: "Kids Wear & School Uniforms",
+  description: "Discover kids wear, party frocks, school uniforms & winter clothing in Ellenabad at Ajay Readymade Store. Comfortable & durable for children.",
   alternates: {
     canonical: "/kids",
   },
