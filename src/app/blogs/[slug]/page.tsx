@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const b = blogs.find((x) => x.slug === slug)
-  if (!b) return { title: "Blog not found" }
+  if (!b) notFound()
 
   const ogImage = b.image || `${siteUrl}/og-image.jpg`
   const fullUrl = `${siteUrl}/blogs/${b.slug}`

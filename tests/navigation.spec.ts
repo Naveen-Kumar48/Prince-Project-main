@@ -16,6 +16,17 @@ async function gotoPage(page: any, path: string) {
   return await page.goto(path, { waitUntil: "domcontentloaded" });
 }
 
+// Helper to ensure header navigation is open on mobile viewports
+async function ensureNavVisible(page: any) {
+  const isMobile = page.viewportSize() ? page.viewportSize().width < 1024 : false;
+  if (isMobile) {
+    const menuBtn = page.locator('button[aria-label*="navigation" i], button[aria-label*="menu" i]').first();
+    if (await menuBtn.isVisible()) {
+      await menuBtn.click();
+    }
+  }
+}
+
 // ── Header Navigation ──────────────────────────────────────────────────────
 
 test.describe("Site Header", () => {
@@ -29,22 +40,26 @@ test.describe("Site Header", () => {
   });
 
   test("Men's Wear nav link is present", async ({ page }) => {
-    const link = page.locator('header a[href="/men"]').first();
+    await ensureNavVisible(page);
+    const link = page.locator('a[href="/men"]').first();
     await expect(link).toBeVisible();
   });
 
   test("Kids Wear nav link is present", async ({ page }) => {
-    const link = page.locator('header a[href="/kids"]').first();
+    await ensureNavVisible(page);
+    const link = page.locator('a[href="/kids"]').first();
     await expect(link).toBeVisible();
   });
 
   test("Women's Wear nav link is present", async ({ page }) => {
-    const link = page.locator('header a[href="/women"]').first();
+    await ensureNavVisible(page);
+    const link = page.locator('a[href="/women"]').first();
     await expect(link).toBeVisible();
   });
 
   test("navigating to Men via header works", async ({ page }) => {
-    const menLink = page.locator('header a[href="/men"]').first();
+    await ensureNavVisible(page);
+    const menLink = page.locator('a[href="/men"]').last();
     await menLink.click();
     await page.waitForURL("**/men");
     expect(page.url()).toContain("/men");
@@ -52,7 +67,8 @@ test.describe("Site Header", () => {
   });
 
   test("navigating to Kids via header works", async ({ page }) => {
-    const kidsLink = page.locator('header a[href="/kids"]').first();
+    await ensureNavVisible(page);
+    const kidsLink = page.locator('a[href="/kids"]').last();
     await kidsLink.click();
     await page.waitForURL("**/kids");
     expect(page.url()).toContain("/kids");
@@ -60,7 +76,8 @@ test.describe("Site Header", () => {
   });
 
   test("navigating to Blog via header works", async ({ page }) => {
-    const blogLink = page.locator('header a[href="/blogs"]').first();
+    await ensureNavVisible(page);
+    const blogLink = page.locator('a[href="/blogs"]').last();
     if (await blogLink.isVisible()) {
       await blogLink.click();
       await page.waitForURL("**/blogs");
@@ -69,7 +86,8 @@ test.describe("Site Header", () => {
   });
 
   test("navigating to Contact via header works", async ({ page }) => {
-    const contactLink = page.locator('header a[href="/contact"]').first();
+    await ensureNavVisible(page);
+    const contactLink = page.locator('a[href="/contact"]').last();
     if (await contactLink.isVisible()) {
       await contactLink.click();
       await page.waitForURL("**/contact");
@@ -99,13 +117,13 @@ test.describe("Accessibility — Skip-to-content", () => {
 test.describe("WhatsApp Floating Button", () => {
   test("WhatsApp button is visible on homepage", async ({ page }) => {
     await gotoPage(page, "/");
-    const waButton = page.locator('a[href*="wa.me"]').first();
+    const waButton = page.locator('a[aria-label*="WhatsApp" i], a[href*="wa.me"]').first();
     await expect(waButton).toBeVisible();
   });
 
   test("WhatsApp button href contains phone number", async ({ page }) => {
     await gotoPage(page, "/");
-    const waButton = page.locator('a[href*="wa.me"]').first();
+    const waButton = page.locator('a[aria-label*="WhatsApp" i], a[href*="wa.me"]').first();
     const href = await waButton.getAttribute("href");
     expect(href).toBeTruthy();
     expect(href).toContain("wa.me");
@@ -114,14 +132,14 @@ test.describe("WhatsApp Floating Button", () => {
 
   test("WhatsApp button has aria-label", async ({ page }) => {
     await gotoPage(page, "/");
-    const waButton = page.locator('a[href*="wa.me"]').first();
+    const waButton = page.locator('a[aria-label*="WhatsApp" i], a[href*="wa.me"]').first();
     const ariaLabel = await waButton.getAttribute("aria-label");
     expect(ariaLabel).toBeTruthy();
   });
 
   test("WhatsApp button opens in new tab (target=_blank)", async ({ page }) => {
     await gotoPage(page, "/");
-    const waButton = page.locator('a[href*="wa.me"]').first();
+    const waButton = page.locator('a[aria-label*="WhatsApp" i], a[href*="wa.me"]').first();
     const target = await waButton.getAttribute("target");
     expect(target).toBe("_blank");
   });

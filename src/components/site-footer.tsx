@@ -95,7 +95,7 @@ export function SiteFooter() {
               <li><Link href="#" className="hover:text-white transition">Exchange Policy</Link></li>
               <li><Link href="#" className="hover:text-white transition">FAQs</Link></li>
               <li className="pt-3 flex flex-col gap-2">
-                <a href={`https://wa.me/${store.whatsapp}`} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:opacity-90"><WhatsappIcon className="w-4 h-4" /> WhatsApp Us</a>
+                <a href={`https://wa.me/${store.whatsapp}`} aria-label="WhatsApp Us" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:opacity-90"><WhatsappIcon className="w-4 h-4" /> WhatsApp Us</a>
                 <span className="text-xs text-white/40">Fastest response • Ellenabad #1 on Google</span>
               </li>
             </ul>

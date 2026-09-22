@@ -16,7 +16,7 @@ export default function HomePage() {
       {/* Semantic H1 + intro for SEO */}
       <section className="pt-12 pb-2 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-8 text-center max-w-[820px]">
-          <h1 className="text-[34px] lg:text-[46px] font-bold leading-[0.95] tracking-[-0.03em] text-[#0B1D3A]">Fashion for Every Family</h1>
+          <h2 className="text-[34px] lg:text-[46px] font-bold leading-[0.95] tracking-[-0.03em] text-[#0B1D3A]">Fashion for Every Family</h2>
           <p className="mt-4 text-slate-600 text-[16px] leading-relaxed">Ajay Readymade Store is the best clothing store in Ellenabad for the latest Men&apos;s, Women&apos;s &amp; Kids Wear at affordable prices. Located on Gurudwara Road, Near Singla Hospital, with new arrivals every week.</p>
         </div>
       </section>

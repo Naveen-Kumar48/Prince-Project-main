@@ -90,9 +90,10 @@ test.describe("Blog Listing Page (/blogs)", () => {
   });
 
   test("category section links to /men, /women, /kids", async ({ page }) => {
-    const menLink = page.locator('a[href="/men"]').first();
-    const womenLink = page.locator('a[href="/women"]').first();
-    const kidsLink = page.locator('a[href="/kids"]').first();
+    const section = page.locator('section').filter({ hasText: "Shop by Category" }).first();
+    const menLink = section.locator('a[href="/men"]').first();
+    const womenLink = section.locator('a[href="/women"]').first();
+    const kidsLink = section.locator('a[href="/kids"]').first();
     await expect(menLink).toBeVisible();
     await expect(womenLink).toBeVisible();
     await expect(kidsLink).toBeVisible();
