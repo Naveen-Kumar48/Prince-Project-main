@@ -42,11 +42,15 @@ const KNOWN_BLOGS = [
   },
 ];
 
+async function gotoPage(page: any, path: string) {
+  await page.goto(path, { waitUntil: "domcontentloaded" });
+}
+
 // ── Blog Listing Tests ─────────────────────────────────────────────────────
 
 test.describe("Blog Listing Page (/blogs)", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/blogs");
+    await gotoPage(page, "/blogs");
   });
 
   test("renders the page with H1", async ({ page }) => {
@@ -126,7 +130,7 @@ test.describe("Blog Listing Page (/blogs)", () => {
 test.describe("Blog Detail Pages", () => {
   for (const blog of KNOWN_BLOGS) {
     test(`${blog.slug} loads with correct H1`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const h1 = page.locator("h1");
       await expect(h1).toBeVisible();
       const h1Text = await h1.innerText();
@@ -136,7 +140,7 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} shows category badge`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const badge = page.getByText(blog.category).first();
       await expect(badge).toBeVisible();
     });
@@ -144,7 +148,7 @@ test.describe("Blog Detail Pages", () => {
     test(`${blog.slug} has article body with multiple paragraphs`, async ({
       page,
     }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const paragraphs = page.locator("article p");
       const count = await paragraphs.count();
       expect(
@@ -154,7 +158,7 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} has Article JSON-LD schema`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const scripts = await page
         .locator('script[type="application/ld+json"]')
         .all();
@@ -172,7 +176,7 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} has BreadcrumbList JSON-LD`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const scripts = await page
         .locator('script[type="application/ld+json"]')
         .all();
@@ -193,7 +197,7 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} has breadcrumb navigation visible`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const breadcrumb = page.locator('nav[aria-label="Breadcrumb"]');
       await expect(breadcrumb).toBeVisible();
       // Should contain "Blog" link
@@ -204,7 +208,7 @@ test.describe("Blog Detail Pages", () => {
     test(`${blog.slug} has internal links to shop categories`, async ({
       page,
     }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       // Should have at least one link to a category page (/men, /women, /kids, /collections/...)
       const internalLinks = page.locator(
         'a[href="/men"], a[href="/women"], a[href="/kids"], a[href^="/collections/"]'
@@ -217,13 +221,13 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} has related posts section`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const relatedHeading = page.getByText("More from the Style Journal");
       await expect(relatedHeading).toBeVisible();
     });
 
     test(`${blog.slug} has at least 2 related post links`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       // Related posts are in a section below the article
       const relatedSection = page.locator("section").last();
       const relatedLinks = relatedSection.locator('a[href^="/blogs/"]');
@@ -232,19 +236,19 @@ test.describe("Blog Detail Pages", () => {
     });
 
     test(`${blog.slug} has "Back to Style Journal" link`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const backLink = page.locator('a[href="/blogs"]').last();
       await expect(backLink).toBeVisible();
     });
 
     test(`${blog.slug} has store info (WhatsApp link)`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const whatsappLink = page.locator('a[href*="wa.me"]').first();
       await expect(whatsappLink).toBeVisible();
     });
 
     test(`${blog.slug} has read time displayed`, async ({ page }) => {
-      await page.goto(`/blogs/${blog.slug}`);
+      await gotoPage(page, `/blogs/${blog.slug}`);
       const readTime = page.getByText(/min read/i).first();
       await expect(readTime).toBeVisible();
     });
@@ -255,7 +259,7 @@ test.describe("Blog Detail Pages", () => {
 
 test.describe("Blog — 404 Handling", () => {
   test("non-existent blog slug returns 404", async ({ page }) => {
-    const response = await page.goto("/blogs/this-blog-does-not-exist");
+    const response = await gotoPage(page, "/blogs/this-blog-does-not-exist");
     // Next.js returns 404 status code
     expect(response?.status()).toBe(404);
   });
@@ -267,7 +271,7 @@ test.describe("Blog Navigation Integration", () => {
   test("can navigate from homepage blog preview to blog listing", async ({
     page,
   }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     // Find a "View All" or blog link
     const blogLink = page.locator('a[href="/blogs"]').first();
     if (await blogLink.isVisible()) {
@@ -280,7 +284,7 @@ test.describe("Blog Navigation Integration", () => {
   test("can navigate from blog listing to blog detail and back", async ({
     page,
   }) => {
-    await page.goto("/blogs");
+    await gotoPage(page, "/blogs");
     const firstBlog = page.locator('a[href^="/blogs/"]').first();
     const href = await firstBlog.getAttribute("href");
     await firstBlog.click();

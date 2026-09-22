@@ -12,11 +12,15 @@
 
 import { test, expect } from "@playwright/test";
 
+async function gotoPage(page: any, path: string) {
+  return await page.goto(path, { waitUntil: "domcontentloaded" });
+}
+
 // ── Header Navigation ──────────────────────────────────────────────────────
 
 test.describe("Site Header", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
   });
 
   test("logo is visible and links to homepage", async ({ page }) => {
@@ -78,13 +82,13 @@ test.describe("Site Header", () => {
 
 test.describe("Accessibility — Skip-to-content", () => {
   test('skip-to-content link exists on homepage', async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const skipLink = page.locator('a[href="#main"]');
     await expect(skipLink).toBeAttached();
   });
 
   test("main content area has id='main'", async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const main = page.locator("#main");
     await expect(main).toBeAttached();
   });
@@ -94,13 +98,13 @@ test.describe("Accessibility — Skip-to-content", () => {
 
 test.describe("WhatsApp Floating Button", () => {
   test("WhatsApp button is visible on homepage", async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const waButton = page.locator('a[href*="wa.me"]').first();
     await expect(waButton).toBeVisible();
   });
 
   test("WhatsApp button href contains phone number", async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const waButton = page.locator('a[href*="wa.me"]').first();
     const href = await waButton.getAttribute("href");
     expect(href).toBeTruthy();
@@ -109,14 +113,14 @@ test.describe("WhatsApp Floating Button", () => {
   });
 
   test("WhatsApp button has aria-label", async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const waButton = page.locator('a[href*="wa.me"]').first();
     const ariaLabel = await waButton.getAttribute("aria-label");
     expect(ariaLabel).toBeTruthy();
   });
 
   test("WhatsApp button opens in new tab (target=_blank)", async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
     const waButton = page.locator('a[href*="wa.me"]').first();
     const target = await waButton.getAttribute("target");
     expect(target).toBe("_blank");
@@ -127,7 +131,7 @@ test.describe("WhatsApp Floating Button", () => {
 
 test.describe("Site Footer", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/");
+    await gotoPage(page, "/");
   });
 
   test("footer is visible", async ({ page }) => {
@@ -196,7 +200,7 @@ test.describe("Key Page Load Tests", () => {
 
   for (const { path, name } of routes) {
     test(`${name} (${path}) loads with status 200`, async ({ page }) => {
-      const response = await page.goto(path);
+      const response = await gotoPage(page, path);
       expect(response?.status(), `${name} should return 200`).toBe(200);
     });
   }
@@ -207,7 +211,7 @@ test.describe("Key Page Load Tests", () => {
 test.describe("Mobile Navigation", { tag: "@mobile" }, () => {
   test("hamburger menu exists on mobile", async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 812 });
-    await page.goto("/");
+    await gotoPage(page, "/");
     const menuBtn = page.locator('button[aria-label*="navigation" i], button[aria-label*="menu" i]').first();
     await expect(menuBtn).toBeVisible();
     await menuBtn.click();
@@ -218,7 +222,7 @@ test.describe("Mobile Navigation", { tag: "@mobile" }, () => {
 
   test("WhatsApp button visible on mobile", async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 812 });
-    await page.goto("/");
+    await gotoPage(page, "/");
     const waButton = page.locator('a[href*="wa.me"]').first();
     await expect(waButton).toBeVisible();
   });
